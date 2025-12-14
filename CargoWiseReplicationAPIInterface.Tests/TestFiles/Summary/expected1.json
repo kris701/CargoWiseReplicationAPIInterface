@@ -1,0 +1,866 @@
+{
+  "data": {
+    "items": [
+      {
+        "schemaName": "dbo",
+        "tableName": "AccAPAccountDetails"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccBankAccount"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccChargeCode"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccChargeRevRecOverride"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccChargeTaxOverride"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccChargeTypeOverride"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccChequeBook"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccGLAggregate"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccGLHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccGLHeaderCompanyFilter"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccPaymentApproval"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccPaymentApprovalItem"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccPaymentBatch"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccPeriodManagement"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccQueryClaim"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccTaxOverrideGroup"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccTaxRate"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccTransactionHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccTransactionLines"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "AccTransactionMatchLink"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusCodeData"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusContainer"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusContainerInvoiceLinePivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusDecHouseBill"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusDecHouseContainerPack"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusDecHouseContainerPivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusDisposition"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusEntryHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusEntryLine"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusEntryNum"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusInBondBill"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusInBondCargoDesc"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusInBondContainer"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusInBondHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusInBondMoveDetail"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "CusInBondMoveHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "DtbBooking"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "DtbBookingConfirmation"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "DtbBookingConsolidation"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "DtbBookingInstruction"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "DtbBookingInstructionPkgDivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "DtbBookingInstructionTmpl"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "DtbBookingTmpl"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "EDICommunicationsMode"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "EDIMessageDeliveryContextSelector"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ExportAWBHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ExportAWBRateLine"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ExportAWBSpecialHandling"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GenAddOnColumn"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GenApprovalRequest"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GenCustomAddOnValue"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GenCustomColumnDefinition"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GenExportBatchSequence"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GenPivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GenRegCertAccredMaintList"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbBranch"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbCompany"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbCompanyCampaignItem"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbDepartment"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbEmailAddress"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbGroup"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbGroupLink"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbGroupRole"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbPerson"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbPersonPrimaryRelationship"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbReleaseNote"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbSecurity"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbStaff"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "GlbWorkTime"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobCharge"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobChargeAttrib"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobChargeRevRecognition"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobCO2e"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobComInvHeaderCharge"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobComInvoiceHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobComInvoiceLine"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobConShipLink"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobConsol"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobConsolAWBSpecialHandling"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobConsolCost"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobConsolTransport"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobContainer"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobContainerPackPivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobContainerPenalty"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobConversation"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobDeclaration"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobDocAddress"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobDocsAndCartage"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobDocumentData"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobExRate"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobMawb"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobOrderHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobOrderItem"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobOrderLine"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobPackLines"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobPackProduct"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobPaymentBasis"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobPickupDeliveryConfirm"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobRequiredDocument"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobSailing"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobService"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobShipment"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobTransportLegPackLineDivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobVoyage"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobVoyDestination"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "JobVoyOrigin"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgAddress"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgAddressCapability"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgAppointedAgentPorts"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgARTerms"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgCollectionNote"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgCompanyData"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgContact"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgContactItem"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgCountryData"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgCreditorGroup"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgCusCode"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgCustomLabels"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgDebtorGroup"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgDocument"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgInvoiceRollupOrGroup"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgMiscServ"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgOpportunity"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgPatternMatch"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgPatternMatchOverride"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgRateTariffLevel"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgRelatedParty"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgSales"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgSalesCall"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgSalesValueAssociationPivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgSecurity"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgSecurityContacts"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgStaffAssignments"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgSupBuyLinkTrnMode"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgSupplierBuyerLink"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgTradeDetail"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgTradePeriod"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgTradeProspect"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgTradeValue"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgTranslatedAddress"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "OrgWebURL"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "PkgPackage"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "PkgPackageBookedDetail"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "PkgPackageContainer"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "PkgPackageHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "PkgPackageJob"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProcessFieldChangeRule"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProcessFieldChangeRuleField"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProcessHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProcessTaskNotification"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProcessTasks"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProcessTaskTemplate"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProcessTemplateValidation"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProcessTemplateValidationAction"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProductionRule"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ProductionRuleSet"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RateAttachmentSet"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RateEntry"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RateLineItems"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RateLines"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RateOneOffContainers"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RateOneOffShipment"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RatingHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefAirline"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefComplianceCommodityAlert"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefComplianceList"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefCountry"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefCountryStates"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefCurrency"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefDamage"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefDocType"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefEquipmentGrade"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefLocalLanguage"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefLocoMap"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefMRComponentCode"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefPacks"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefPackType"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefRepairCode"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefServiceLevel"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefShippingLine"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefTimeZone"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefTimeZoneRule"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefTimeZoneSet"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefUnitSection"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefUNLOCO"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefVessel"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefZoneHeader"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RefZonePivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "RelatedActivityPivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmActivityLog"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmALog"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmData"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmEvent"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmMenuItem"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmMenuMenuPivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmModuleFilter"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmModuleFilterUserData"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmNote"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmReportRun"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmScheduleTask"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmScheduleTaskCopyRecipient"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmScheduleTaskRecipient"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmServiceTask"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StmTemplate"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "StorageMain"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "UNDGAttribute"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "UNDGCommonData"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "UNDGDataItem"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "UNDGSubstancePivot"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "WhsDocketLine"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "WorkItem"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ZZRefExchangeRate"
+      },
+      {
+        "schemaName": "dbo",
+        "tableName": "ZZUNDGSubstance"
+      }
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 ﻿using CargoWiseReplicationAPIInterface.Models.Changes;
+using CargoWiseReplicationAPIInterface.Models.Summary;
 using CargoWiseReplicationAPIInterface.Tests.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
@@ -12,7 +13,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 	public class ReplicationAPIInterfaceTests
 	{
 		[TestMethod]
-		[DataRow("TestFiles/input1.json", "TestFiles/expected1.json")]
+		[DataRow("TestFiles/Changes/input1.json", "TestFiles/Changes/expected1.json")]
 		public void Can_ConvertChanges(string inputFile, string expectedFile)
 		{
 			// ARRANGE
@@ -27,6 +28,36 @@ namespace CargoWiseReplicationAPIInterface.Tests
 			var expectedObject = JsonSerializer.Deserialize<List<GlbCompanyModel>>(File.ReadAllText(expectedFile));
 			var expectedText = JsonSerializer.Serialize(expectedObject);
 			var actualText = JsonSerializer.Serialize(actual);
+			Assert.AreEqual(expectedText, actualText);
+		}
+
+		[TestMethod]
+		[DataRow("TestFiles/Summary/input1.json", "TestFiles/Summary/expected1.json")]
+		public void Can_ParseSummaryResponse(string inputFile, string expectedFile)
+		{
+			// ARRANGE
+			// ACT
+			var actualObject = JsonSerializer.Deserialize<SummaryResponse>(File.ReadAllText(inputFile));
+
+			// ASSERT
+			var expectedObject = JsonSerializer.Deserialize<SummaryResponse>(File.ReadAllText(expectedFile));
+			var expectedText = JsonSerializer.Serialize(expectedObject);
+			var actualText = JsonSerializer.Serialize(actualObject);
+			Assert.AreEqual(expectedText, actualText);
+		}
+
+		[TestMethod]
+		[DataRow("TestFiles/Changes/input2.json", "TestFiles/Changes/expected2.json")]
+		public void Can_ParseDetailsResponse(string inputFile, string expectedFile)
+		{
+			// ARRANGE
+			// ACT
+			var actualObject = JsonSerializer.Deserialize<ChangesResponse>(File.ReadAllText(inputFile));
+
+			// ASSERT
+			var expectedObject = JsonSerializer.Deserialize<ChangesResponse>(File.ReadAllText(expectedFile));
+			var expectedText = JsonSerializer.Serialize(expectedObject);
+			var actualText = JsonSerializer.Serialize(actualObject);
 			Assert.AreEqual(expectedText, actualText);
 		}
 	}
