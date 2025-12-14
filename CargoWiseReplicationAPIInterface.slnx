@@ -1,4 +1,10 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".github/workflows/dotnet-desktop.yml" />
+    <File Path=".gitignore" />
+    <File Path="LICENSE.txt" />
+    <File Path="README.md" />
+  </Folder>
   <Project Path="CargoWiseReplicationAPIInterface.Tests/CargoWiseReplicationAPIInterface.Tests.csproj" />
   <Project Path="CargoWiseReplicationAPIInterface/CargoWiseReplicationAPIInterface.csproj" />
 </Solution>
