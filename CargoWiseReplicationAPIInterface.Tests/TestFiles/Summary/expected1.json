@@ -1,5 +1,6 @@
 {
   "data": {
+    "maxLsn": "0x0002DE310007BA130005",
     "items": [
       {
         "schemaName": "dbo",

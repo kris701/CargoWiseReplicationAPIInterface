@@ -7,6 +7,8 @@ namespace CargoWiseReplicationAPIInterface.Models.Summary
 {
 	public class SummaryResponseData
 	{
+		[JsonPropertyName("maxLsn")]
+		public string MaxLSN { get; set; }
 		[JsonPropertyName("items")]
 		public List<SummaryResponseDataItem> Items { get; set; }
 	}

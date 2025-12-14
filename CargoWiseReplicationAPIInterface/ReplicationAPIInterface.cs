@@ -44,7 +44,7 @@ namespace CargoWiseReplicationAPIInterface
 			_client.TimeOut = TimeSpan.FromMinutes(10);
 		}
 
-		public async Task<List<SummaryResponseDataItem>> GetSummary(string afterLsn)
+		public async Task<SummaryResponseData> GetSummary(string afterLsn)
 		{
 			var response = await _client.GetAsync<SummaryRequest, SummaryResponse>(
 				new SummaryRequest()
@@ -53,7 +53,7 @@ namespace CargoWiseReplicationAPIInterface
 				},
 				URL + "/change-summary"
 			);
-			return response.Data.Items;
+			return response.Data;
 		}
 
 		public async Task<List<T>> GetDetails<T>(string afterLsn, string maxLsn, string schemaName, string tableName)
