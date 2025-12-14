@@ -13,3 +13,5 @@
 
 
 # CargoWise Replication API Interface
+
+You can find the package on the [NuGet Package Manager](https://www.nuget.org/packages/CargoWiseReplicationAPIInterface).
