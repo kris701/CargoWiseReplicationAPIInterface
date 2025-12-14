@@ -56,7 +56,8 @@ namespace CargoWiseReplicationAPIInterface
 			return response.Data;
 		}
 
-		public async Task<List<T>> GetDetails<T>(string afterLsn, string maxLsn, string schemaName, string tableName)
+		public async Task<List<T>> GetDetails<T>(string afterLsn, string maxLsn, string schemaName, string tableName) => await GetDetails(afterLsn, maxLsn, schemaName, tableName, typeof(T));
+		public async Task<dynamic> GetDetails(string afterLsn, string maxLsn, string schemaName, string tableName, Type asType)
 		{
 			var responseList = new List<ChangesResponse>();
 
@@ -72,7 +73,7 @@ namespace CargoWiseReplicationAPIInterface
 				}, 
 				URL + "/change-detail"
 			);
-			var props = typeof(T).GetProperties();
+			var props = asType.GetProperties();
 			var propSet = new HashSet<string>();
 			foreach (var prop in props)
 				propSet.Add(prop.Name);
@@ -108,12 +109,13 @@ namespace CargoWiseReplicationAPIInterface
 					_currentChanges = null;
 			}
 
-			return ConvertChanges<T>(responseList);
+			return ConvertChanges(responseList, asType);
 		}
 
-		public List<T> ConvertChanges<T>(List<ChangesResponse> changes)
+		public List<T> ConvertChanges<T>(List<ChangesResponse> changes) => ConvertChanges(changes, typeof(T));
+		public dynamic ConvertChanges(List<ChangesResponse> changes, Type asType)
 		{
-			var returnList = new List<T>();
+			var returnList = new List<object>();
 
 			foreach (var change in changes)
 			{
@@ -123,7 +125,7 @@ namespace CargoWiseReplicationAPIInterface
 					foreach (var chamges in chamgeItems.Changes.OrderBy(x => x.Operation))
 					{
 						var asJson = MergeDataToJson(chamges.Data, dict);
-						var newItem = JsonSerializer.Deserialize<T>(asJson, _options);
+						var newItem = JsonSerializer.Deserialize(asJson, asType, _options);
 						if (newItem != null)
 							returnList.Add(newItem);
 					}

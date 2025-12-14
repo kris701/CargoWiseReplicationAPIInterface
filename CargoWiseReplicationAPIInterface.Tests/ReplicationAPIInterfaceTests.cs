@@ -23,7 +23,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 			Assert.IsNotNull(changes);
 
 			// ACT
-			var actual = repicationInterface.ConvertChanges<GlbCompanyModel>(changes.Changes);
+			var actual = repicationInterface.ConvertChanges(changes.Changes, typeof(GlbCompanyModel));
 
 			// ASSERT
 			var expectedObject = JsonSerializer.Deserialize<List<GlbCompanyModel>>(File.ReadAllText(expectedFile));
