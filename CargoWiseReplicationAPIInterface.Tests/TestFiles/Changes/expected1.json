@@ -34,7 +34,7 @@
     "GC_SystemCreateUser": "CD2",
     "GC_SystemLastEditTimeUtc": "2024-01-12T15:12:00",
     "GC_SystemLastEditUser": "KJA",
-    "Operation": 3
+    "OpCode": 3
   },
   {
     "GC_PK": "2bda56a0-f50a-4f55-ba47-101ce36b0f33",
@@ -71,7 +71,7 @@
     "GC_SystemCreateUser": "CD2",
     "GC_SystemLastEditTimeUtc": "2024-12-17T12:50:00",
     "GC_SystemLastEditUser": "KJA",
-    "Operation": 4
+    "OpCode": 4
   },
   {
     "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
@@ -108,7 +108,7 @@
     "GC_SystemCreateUser": "E  ",
     "GC_SystemLastEditTimeUtc": "2022-09-30T09:08:00",
     "GC_SystemLastEditUser": "CD2",
-    "Operation": 3
+    "OpCode": 3
   },
   {
     "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
@@ -145,7 +145,7 @@
     "GC_SystemCreateUser": "E  ",
     "GC_SystemLastEditTimeUtc": "2025-06-04T08:31:00",
     "GC_SystemLastEditUser": "KJA",
-    "Operation": 4
+    "OpCode": 4
   },
   {
     "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
@@ -182,7 +182,7 @@
     "GC_SystemCreateUser": "E  ",
     "GC_SystemLastEditTimeUtc": "2025-06-04T08:31:00",
     "GC_SystemLastEditUser": "KJA",
-    "Operation": 3
+    "OpCode": 3
   },
   {
     "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
@@ -219,6 +219,6 @@
     "GC_SystemCreateUser": "E  ",
     "GC_SystemLastEditTimeUtc": "2025-06-04T08:32:00",
     "GC_SystemLastEditUser": "KJA",
-    "Operation": 4
+    "OpCode": 4
   }
 ]

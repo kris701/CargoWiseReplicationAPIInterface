@@ -2,6 +2,6 @@
 {
 	public class BaseReturnData
 	{
-		public int Operation { get; set; } = -1;
+		public int OpCode { get; set; } = -1;
 	}
 }

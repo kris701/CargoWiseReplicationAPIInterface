@@ -124,7 +124,7 @@ namespace CargoWiseReplicationAPIInterface
 			var returnList = new List<object>();
 
 			var props = asType.GetProperties().ToList();
-			props.RemoveAll(x => x.Name != "Operation");
+			props.RemoveAll(x => x.Name != "OpCode");
 			var operationProp = props[0];
 
 			foreach (var change in changes)
