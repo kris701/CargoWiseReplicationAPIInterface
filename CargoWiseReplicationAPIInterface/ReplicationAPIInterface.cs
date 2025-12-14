@@ -72,9 +72,19 @@ namespace CargoWiseReplicationAPIInterface
 				}, 
 				URL + "/change-detail"
 			);
+			var props = typeof(T).GetProperties();
+			var propSet = new HashSet<string>();
+			foreach (var prop in props)
+				propSet.Add(prop.Name);
 
 			while (_currentChanges != null)
 			{
+				foreach (var item in _currentChanges.Data.Data.Items)
+				{
+					foreach (var change in item.Changes)
+						change.Data.RemoveAll(x => !propSet.Contains(x.ColumnName));
+					item.Columns.RemoveAll(x => !propSet.Contains(x.Name));
+				}
 				responseList.Add(_currentChanges);
 
 				if (_currentChanges.Data.Data.CurrentItemCount == _currentChanges.Data.Data.ItemsPerPage)
@@ -159,7 +169,14 @@ namespace CargoWiseReplicationAPIInterface
 					var parsed = DateTime.ParseExact(strValue2, "MM/dd/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
 					return $"\"{parsed.ToString("O")}\"";
 				default:
-					return $"\"{value}\"";
+					var strValue3 = value.ToString();
+					if (strValue3 == null)
+						return "null";
+					strValue3 = strValue3.Replace("\"", "'");
+					strValue3 = strValue3.Replace("\r", "\\r");
+					strValue3 = strValue3.Replace("\n", "\\n");
+					strValue3 = strValue3.Replace("\\", "\\\\");
+					return $"\"{strValue3}\"";
 			}
 		}
 
