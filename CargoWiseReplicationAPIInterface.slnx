@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CargoWiseReplicationAPIInterface.Tests/CargoWiseReplicationAPIInterface.Tests.csproj" />
+  <Project Path="CargoWiseReplicationAPIInterface/CargoWiseReplicationAPIInterface.csproj" />
+</Solution>
