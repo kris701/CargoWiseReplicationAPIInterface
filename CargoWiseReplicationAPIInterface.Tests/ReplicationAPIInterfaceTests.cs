@@ -21,10 +21,13 @@ namespace CargoWiseReplicationAPIInterface.Tests
 			Assert.IsNotNull(changes);
 
 			// ACT
-			var converted = repicationInterface.ConvertChanges<GlbCompanyModel>(changes.Changes);
+			var actual = repicationInterface.ConvertChanges<GlbCompanyModel>(changes.Changes);
 
 			// ASSERT
-
+			var expectedObject = JsonSerializer.Deserialize<List<GlbCompanyModel>>(File.ReadAllText(expectedFile));
+			var expectedText = JsonSerializer.Serialize(expectedObject);
+			var actualText = JsonSerializer.Serialize(actual);
+			Assert.AreEqual(expectedText, actualText);
 		}
 	}
 }

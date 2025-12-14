@@ -1,4 +1,5 @@
 ﻿using CargoWiseReplicationAPIInterface.Models.Changes;
+using CargoWiseReplicationAPIInterface.Models.Summary;
 using SerializableHttps;
 using SerializableHttps.AuthenticationMethods;
 using System.Globalization;
@@ -43,7 +44,19 @@ namespace CargoWiseReplicationAPIInterface
 			_client.TimeOut = TimeSpan.FromMinutes(10);
 		}
 
-		public async Task<List<T>> GetChanges<T>(string afterLsn, string maxLsn, string schemaName, string tableName)
+		public async Task<List<SummaryResponseDataItem>> GetSummary(string afterLsn)
+		{
+			var response = await _client.GetAsync<SummaryRequest, SummaryResponse>(
+				new SummaryRequest()
+				{
+					AfterLSN = afterLsn
+				},
+				URL + "/change-summary"
+			);
+			return response.Data.Items;
+		}
+
+		public async Task<List<T>> GetDetails<T>(string afterLsn, string maxLsn, string schemaName, string tableName)
 		{
 			var responseList = new List<ChangesResponse>();
 
@@ -94,7 +107,7 @@ namespace CargoWiseReplicationAPIInterface
 
 			foreach (var change in changes)
 			{
-				foreach (var chamgeItems in change.Data.Data.Items)
+				foreach (var chamgeItems in change.Data.Data.Items.OrderBy(x => double.Parse(x.Version)))
 				{
 					var dict = BuildTypeDictionary(chamgeItems.Columns);
 					foreach (var chamges in chamgeItems.Changes.OrderBy(x => x.Operation))
