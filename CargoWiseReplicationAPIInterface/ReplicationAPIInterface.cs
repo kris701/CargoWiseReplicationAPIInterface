@@ -4,15 +4,14 @@ using CargoWiseReplicationAPIInterface.Models.Summary;
 using SerializableHttps;
 using SerializableHttps.AuthenticationMethods;
 using System.Globalization;
-using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
 namespace CargoWiseReplicationAPIInterface
 {
-    public class ReplicationAPIInterface
-    {
+	public class ReplicationAPIInterface
+	{
 		/// <summary>
 		/// The URL to the replication endpoint.
 		/// This should be in a format like "https://(url)/Services/api/replication/"
@@ -22,7 +21,7 @@ namespace CargoWiseReplicationAPIInterface
 		public string Password { get; set; }
 		public int PageSize { get; set; } = 1000;
 
-		private SerializableHttpsClient _client;
+		private readonly SerializableHttpsClient _client;
 		private readonly JsonSerializerOptions _options = new JsonSerializerOptions()
 		{
 			AllowTrailingCommas = true
@@ -74,7 +73,7 @@ namespace CargoWiseReplicationAPIInterface
 					SchemaName = schemaName,
 					TableName = tableName,
 					PageSize = PageSize
-				}, 
+				},
 				URL + "/change-detail"
 			);
 			var props = asType.GetProperties();
@@ -201,7 +200,7 @@ namespace CargoWiseReplicationAPIInterface
 		{
 			var dict = new Dictionary<string, string>();
 
-			foreach(var column in columns)
+			foreach (var column in columns)
 			{
 				if (!dict.ContainsKey(column.Name))
 					dict.Add(column.Name, column.Type.ToUpper());

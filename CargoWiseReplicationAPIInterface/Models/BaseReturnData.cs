@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CargoWiseReplicationAPIInterface.Models
+﻿namespace CargoWiseReplicationAPIInterface.Models
 {
 	public class BaseReturnData
 	{
-		public OperationTypes Operation { get; set; } = OperationTypes.None;
+		public int Operation { get; set; } = -1;
 	}
 }

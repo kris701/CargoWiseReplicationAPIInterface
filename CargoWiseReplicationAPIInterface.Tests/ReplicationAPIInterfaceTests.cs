@@ -1,12 +1,6 @@
-﻿using CargoWiseReplicationAPIInterface.Models;
-using CargoWiseReplicationAPIInterface.Models.Changes;
+﻿using CargoWiseReplicationAPIInterface.Models.Changes;
 using CargoWiseReplicationAPIInterface.Models.Summary;
 using CargoWiseReplicationAPIInterface.Tests.Models;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Reflection.PortableExecutable;
-using System.Text;
 using System.Text.Json;
 
 namespace CargoWiseReplicationAPIInterface.Tests
@@ -20,7 +14,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 		public void Can_ConvertChanges(string inputFile, string expectedFile)
 		{
 			// ARRANGE
-			var repicationInterface = new ReplicationAPIInterface("","","");
+			var repicationInterface = new ReplicationAPIInterface("", "", "");
 			var changes = JsonSerializer.Deserialize<ChangesModel>(File.ReadAllText(inputFile));
 			Assert.IsNotNull(changes);
 
