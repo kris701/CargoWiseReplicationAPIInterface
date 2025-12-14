@@ -14,6 +14,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 	{
 		[TestMethod]
 		[DataRow("TestFiles/Changes/input1.json", "TestFiles/Changes/expected1.json")]
+		[DataRow("TestFiles/Changes/input3.json", "TestFiles/Changes/expected3.json")]
 		public void Can_ConvertChanges(string inputFile, string expectedFile)
 		{
 			// ARRANGE
