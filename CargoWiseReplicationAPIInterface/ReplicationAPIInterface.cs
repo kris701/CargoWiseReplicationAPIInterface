@@ -1,4 +1,5 @@
-﻿using CargoWiseReplicationAPIInterface.Models.Changes;
+﻿using CargoWiseReplicationAPIInterface.Models;
+using CargoWiseReplicationAPIInterface.Models.Changes;
 using CargoWiseReplicationAPIInterface.Models.Summary;
 using SerializableHttps;
 using SerializableHttps.AuthenticationMethods;
@@ -56,9 +57,12 @@ namespace CargoWiseReplicationAPIInterface
 			return response.Data;
 		}
 
-		public async Task<List<T>> GetDetails<T>(string afterLsn, string maxLsn, string schemaName, string tableName) => await GetDetails(afterLsn, maxLsn, schemaName, tableName, typeof(T));
+		public async Task<List<T>> GetDetails<T>(string afterLsn, string maxLsn, string schemaName, string tableName) where T : BaseReturnData => await GetDetails(afterLsn, maxLsn, schemaName, tableName, typeof(T));
 		public async Task<dynamic> GetDetails(string afterLsn, string maxLsn, string schemaName, string tableName, Type asType)
 		{
+			if (!asType.IsSubclassOf(typeof(BaseReturnData)))
+				throw new Exception($"Invalid type! Must be based on {nameof(BaseReturnData)}!");
+
 			var responseList = new List<ChangesResponse>();
 
 			ChangesResponse? _currentChanges = null;
@@ -112,22 +116,32 @@ namespace CargoWiseReplicationAPIInterface
 			return ConvertChanges(responseList, asType);
 		}
 
-		public List<T> ConvertChanges<T>(List<ChangesResponse> changes) => ConvertChanges(changes, typeof(T));
+		public List<T> ConvertChanges<T>(List<ChangesResponse> changes) where T : BaseReturnData => ConvertChanges(changes, typeof(T));
 		public dynamic ConvertChanges(List<ChangesResponse> changes, Type asType)
 		{
+			if (!asType.IsSubclassOf(typeof(BaseReturnData)))
+				throw new Exception($"Invalid type! Must be based on {nameof(BaseReturnData)}!");
+
 			var returnList = new List<object>();
+
+			var props = asType.GetProperties().ToList();
+			props.RemoveAll(x => x.Name != "Operation");
+			var operationProp = props[0];
 
 			foreach (var change in changes)
 			{
 				foreach (var chamgeItems in change.Data.Data.Items.OrderBy(x => double.Parse(x.Version)))
 				{
 					var dict = BuildTypeDictionary(chamgeItems.Columns);
-					foreach (var chamges in chamgeItems.Changes.OrderBy(x => x.Operation))
+					foreach (var chamges in chamgeItems.Changes)
 					{
 						var asJson = MergeDataToJson(chamges.Data, dict);
 						var newItem = JsonSerializer.Deserialize(asJson, asType, _options);
 						if (newItem != null)
+						{
+							operationProp.SetValue(newItem, chamges.Operation);
 							returnList.Add(newItem);
+						}
 					}
 				}
 			}
@@ -154,6 +168,7 @@ namespace CargoWiseReplicationAPIInterface
 			switch (columnType)
 			{
 				case "INT":
+				case "MONEY":
 					return $"{value}";
 				case "BIT":
 					var strValue = value.ToString();

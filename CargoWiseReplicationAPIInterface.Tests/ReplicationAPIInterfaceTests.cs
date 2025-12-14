@@ -1,9 +1,11 @@
-﻿using CargoWiseReplicationAPIInterface.Models.Changes;
+﻿using CargoWiseReplicationAPIInterface.Models;
+using CargoWiseReplicationAPIInterface.Models.Changes;
 using CargoWiseReplicationAPIInterface.Models.Summary;
 using CargoWiseReplicationAPIInterface.Tests.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Text.Json;
 

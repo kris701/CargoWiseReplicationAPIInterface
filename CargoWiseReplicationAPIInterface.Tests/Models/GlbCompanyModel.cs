@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CargoWiseReplicationAPIInterface.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CargoWiseReplicationAPIInterface.Tests.Models
 {
-	public class GlbCompanyModel
+	public class GlbCompanyModel : BaseReturnData
 	{
 		public Guid? GC_PK { get; set; }
 		public string? GC_Code { get; set; }
