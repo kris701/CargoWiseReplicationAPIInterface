@@ -1,1670 +1,446 @@
 [
   {
-    "GC_PK": {
-      "Value": "2bda56a0-f50a-4f55-ba47-101ce36b0f33",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "USA",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics US Inc",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "82-2375963",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "274 RARITAN CENTER PKWY",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "EDISON",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B17325431001",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "08837-3610",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "NJ",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "USD",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "US",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "SNA1[0-2]SA1[4-22]",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "VAD",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2017-08-22T11:27:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "CD2",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2024-01-12T15:12:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "2bda56a0-f50a-4f55-ba47-101ce36b0f33",
+    "GC_Code": "USA",
+    "GC_Name": "Link Logistics US Inc",
+    "GC_BusinessRegNo": "82-2375963",
+    "GC_BusinessRegNo2": "",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "274 RARITAN CENTER PKWY",
+    "GC_Address2": "",
+    "GC_City": "EDISON",
+    "GC_Phone": "\u002B17325431001",
+    "GC_PostCode": "08837-3610",
+    "GC_State": "NJ",
+    "GC_Fax": "",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8",
+    "GC_RX_NKLocalCurrency": "USD",
+    "GC_RN_NKCountryCode": "US",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": false,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": false,
+    "GC_IsValid": true,
+    "GC_Email": "",
+    "GC_AddressMap": "SNA1[0-2]SA1[4-22]",
+    "GC_ValidationStatus": "VAD",
+    "GC_SystemCreateTimeUtc": "2017-08-22T11:27:00",
+    "GC_SystemCreateUser": "CD2",
+    "GC_SystemLastEditTimeUtc": "2024-01-12T15:12:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 3
   },
   {
-    "GC_PK": {
-      "Value": "2bda56a0-f50a-4f55-ba47-101ce36b0f33",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "USA",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics US Inc",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "82-2375963",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "82-2375963",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "82-2375963",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "274 RARITAN CENTER PKWY",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "EDISON",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B17325431001",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "08837-3610",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "NJ",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": "2017-09-01T00:00:00",
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "USD",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "US",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "SNA1[0-2]SA1[4-22]",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "VAD",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2017-08-22T11:27:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "CD2",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2024-12-17T12:50:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "2bda56a0-f50a-4f55-ba47-101ce36b0f33",
+    "GC_Code": "USA",
+    "GC_Name": "Link Logistics US Inc",
+    "GC_BusinessRegNo": "82-2375963",
+    "GC_BusinessRegNo2": "82-2375963",
+    "GC_CustomsRegistrationNo": "82-2375963",
+    "GC_Address1": "274 RARITAN CENTER PKWY",
+    "GC_Address2": "",
+    "GC_City": "EDISON",
+    "GC_Phone": "\u002B17325431001",
+    "GC_PostCode": "08837-3610",
+    "GC_State": "NJ",
+    "GC_Fax": "",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": "2017-09-01T00:00:00",
+    "GC_OH_OrgProxy": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8",
+    "GC_RX_NKLocalCurrency": "USD",
+    "GC_RN_NKCountryCode": "US",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": false,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": false,
+    "GC_IsValid": true,
+    "GC_Email": "",
+    "GC_AddressMap": "SNA1[0-2]SA1[4-22]",
+    "GC_ValidationStatus": "VAD",
+    "GC_SystemCreateTimeUtc": "2017-08-22T11:27:00",
+    "GC_SystemCreateUser": "CD2",
+    "GC_SystemLastEditTimeUtc": "2024-12-17T12:50:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 4
   },
   {
-    "GC_PK": {
-      "Value": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "DNK",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics A/S",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "C.F. TIETGENS BOULEVARD 20",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "ODENSE SOE",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B4572253666",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "5220",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "83",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "\u002B4572253866",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "ef581617-0ff5-4556-96f2-574552e296cd",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "DKK",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "DK",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "ode@linklog.com",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "MAN",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2012-04-18T07:49:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "E  ",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2022-09-30T09:08:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "CD2",
-      "IsSet": true
-    },
+    "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
+    "GC_Code": "DNK",
+    "GC_Name": "Link Logistics A/S",
+    "GC_BusinessRegNo": "28659024",
+    "GC_BusinessRegNo2": "28659024",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "C.F. TIETGENS BOULEVARD 20",
+    "GC_Address2": "",
+    "GC_City": "ODENSE SOE",
+    "GC_Phone": "\u002B4572253666",
+    "GC_PostCode": "5220",
+    "GC_State": "83",
+    "GC_Fax": "\u002B4572253866",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "ef581617-0ff5-4556-96f2-574552e296cd",
+    "GC_RX_NKLocalCurrency": "DKK",
+    "GC_RN_NKCountryCode": "DK",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": true,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": true,
+    "GC_IsValid": true,
+    "GC_Email": "ode@linklog.com",
+    "GC_AddressMap": "",
+    "GC_ValidationStatus": "MAN",
+    "GC_SystemCreateTimeUtc": "2012-04-18T07:49:00",
+    "GC_SystemCreateUser": "E  ",
+    "GC_SystemLastEditTimeUtc": "2022-09-30T09:08:00",
+    "GC_SystemLastEditUser": "CD2",
     "OpCode": 3
   },
   {
-    "GC_PK": {
-      "Value": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "DNK",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics A/S",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "C.F. TIETGENS BOULEVARD 20",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "ODENSE SOE",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B4570104500",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "5220",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "83",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "\u002B4572253866",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "ef581617-0ff5-4556-96f2-574552e296cd",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "DKK",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "DK",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "ode@linklog.com",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "MAN",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2012-04-18T07:49:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "E  ",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2025-06-04T08:31:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
+    "GC_Code": "DNK",
+    "GC_Name": "Link Logistics A/S",
+    "GC_BusinessRegNo": "28659024",
+    "GC_BusinessRegNo2": "28659024",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "C.F. TIETGENS BOULEVARD 20",
+    "GC_Address2": "",
+    "GC_City": "ODENSE SOE",
+    "GC_Phone": "\u002B4570104500",
+    "GC_PostCode": "5220",
+    "GC_State": "83",
+    "GC_Fax": "\u002B4572253866",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "ef581617-0ff5-4556-96f2-574552e296cd",
+    "GC_RX_NKLocalCurrency": "DKK",
+    "GC_RN_NKCountryCode": "DK",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": true,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": true,
+    "GC_IsValid": true,
+    "GC_Email": "ode@linklog.com",
+    "GC_AddressMap": "",
+    "GC_ValidationStatus": "MAN",
+    "GC_SystemCreateTimeUtc": "2012-04-18T07:49:00",
+    "GC_SystemCreateUser": "E  ",
+    "GC_SystemLastEditTimeUtc": "2025-06-04T08:31:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 4
   },
   {
-    "GC_PK": {
-      "Value": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "DNK",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics A/S",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "C.F. TIETGENS BOULEVARD 20",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "ODENSE SOE",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B4570104500",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "5220",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "83",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "\u002B4572253866",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "ef581617-0ff5-4556-96f2-574552e296cd",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "DKK",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "DK",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "ode@linklog.com",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "MAN",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2012-04-18T07:49:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "E  ",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2025-06-04T08:31:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
+    "GC_Code": "DNK",
+    "GC_Name": "Link Logistics A/S",
+    "GC_BusinessRegNo": "28659024",
+    "GC_BusinessRegNo2": "28659024",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "C.F. TIETGENS BOULEVARD 20",
+    "GC_Address2": "",
+    "GC_City": "ODENSE SOE",
+    "GC_Phone": "\u002B4570104500",
+    "GC_PostCode": "5220",
+    "GC_State": "83",
+    "GC_Fax": "\u002B4572253866",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "ef581617-0ff5-4556-96f2-574552e296cd",
+    "GC_RX_NKLocalCurrency": "DKK",
+    "GC_RN_NKCountryCode": "DK",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": true,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": true,
+    "GC_IsValid": true,
+    "GC_Email": "ode@linklog.com",
+    "GC_AddressMap": "",
+    "GC_ValidationStatus": "MAN",
+    "GC_SystemCreateTimeUtc": "2012-04-18T07:49:00",
+    "GC_SystemCreateUser": "E  ",
+    "GC_SystemLastEditTimeUtc": "2025-06-04T08:31:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 3
   },
   {
-    "GC_PK": {
-      "Value": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "DNK",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics A/S",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "C.F. TIETGENS BOULEVARD 20",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "ODENSE SOE",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B4570104500",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "5220",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "83",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "\u002B4572253866",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "ef581617-0ff5-4556-96f2-574552e296cd",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "DKK",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "DK",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "ode@linklog.com",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "MAN",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2012-04-18T07:49:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "E  ",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2025-06-04T08:32:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
+    "GC_Code": "DNK",
+    "GC_Name": "Link Logistics A/S",
+    "GC_BusinessRegNo": "28659024",
+    "GC_BusinessRegNo2": "28659024",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "C.F. TIETGENS BOULEVARD 20",
+    "GC_Address2": "",
+    "GC_City": "ODENSE SOE",
+    "GC_Phone": "\u002B4570104500",
+    "GC_PostCode": "5220",
+    "GC_State": "83",
+    "GC_Fax": "\u002B4572253866",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "ef581617-0ff5-4556-96f2-574552e296cd",
+    "GC_RX_NKLocalCurrency": "DKK",
+    "GC_RN_NKCountryCode": "DK",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": true,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": true,
+    "GC_IsValid": true,
+    "GC_Email": "ode@linklog.com",
+    "GC_AddressMap": "",
+    "GC_ValidationStatus": "MAN",
+    "GC_SystemCreateTimeUtc": "2012-04-18T07:49:00",
+    "GC_SystemCreateUser": "E  ",
+    "GC_SystemLastEditTimeUtc": "2025-06-04T08:32:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 4
   },
   {
-    "GC_PK": {
-      "Value": "2bda56a0-f50a-4f55-ba47-101ce36b0f33",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "USA",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics US Inc",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "82-2375963",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "274 RARITAN CENTER PKWY",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "EDISON",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B17325431001",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "08837-3610",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "NJ",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "USD",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "US",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "SNA1[0-2]SA1[4-22]",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "VAD",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2017-08-22T11:27:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "CD2",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2024-01-12T15:12:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "2bda56a0-f50a-4f55-ba47-101ce36b0f33",
+    "GC_Code": "USA",
+    "GC_Name": "Link Logistics US Inc",
+    "GC_BusinessRegNo": "82-2375963",
+    "GC_BusinessRegNo2": "",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "274 RARITAN CENTER PKWY",
+    "GC_Address2": "",
+    "GC_City": "EDISON",
+    "GC_Phone": "\u002B17325431001",
+    "GC_PostCode": "08837-3610",
+    "GC_State": "NJ",
+    "GC_Fax": "",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8",
+    "GC_RX_NKLocalCurrency": "USD",
+    "GC_RN_NKCountryCode": "US",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": false,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": false,
+    "GC_IsValid": true,
+    "GC_Email": "",
+    "GC_AddressMap": "SNA1[0-2]SA1[4-22]",
+    "GC_ValidationStatus": "VAD",
+    "GC_SystemCreateTimeUtc": "2017-08-22T11:27:00",
+    "GC_SystemCreateUser": "CD2",
+    "GC_SystemLastEditTimeUtc": "2024-01-12T15:12:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 3
   },
   {
-    "GC_PK": {
-      "Value": "2bda56a0-f50a-4f55-ba47-101ce36b0f33",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "USA",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics US Inc",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "82-2375963",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "82-2375963",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "82-2375963",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "274 RARITAN CENTER PKWY",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "EDISON",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B17325431001",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "08837-3610",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "NJ",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": "2017-09-01T00:00:00",
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "USD",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "US",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "SNA1[0-2]SA1[4-22]",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "VAD",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2017-08-22T11:27:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "CD2",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2024-12-17T12:50:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "2bda56a0-f50a-4f55-ba47-101ce36b0f33",
+    "GC_Code": "USA",
+    "GC_Name": "Link Logistics US Inc",
+    "GC_BusinessRegNo": "82-2375963",
+    "GC_BusinessRegNo2": "82-2375963",
+    "GC_CustomsRegistrationNo": "82-2375963",
+    "GC_Address1": "274 RARITAN CENTER PKWY",
+    "GC_Address2": "",
+    "GC_City": "EDISON",
+    "GC_Phone": "\u002B17325431001",
+    "GC_PostCode": "08837-3610",
+    "GC_State": "NJ",
+    "GC_Fax": "",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": "2017-09-01T00:00:00",
+    "GC_OH_OrgProxy": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8",
+    "GC_RX_NKLocalCurrency": "USD",
+    "GC_RN_NKCountryCode": "US",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": false,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": false,
+    "GC_IsValid": true,
+    "GC_Email": "",
+    "GC_AddressMap": "SNA1[0-2]SA1[4-22]",
+    "GC_ValidationStatus": "VAD",
+    "GC_SystemCreateTimeUtc": "2017-08-22T11:27:00",
+    "GC_SystemCreateUser": "CD2",
+    "GC_SystemLastEditTimeUtc": "2024-12-17T12:50:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 4
   },
   {
-    "GC_PK": {
-      "Value": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "DNK",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics A/S",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "C.F. TIETGENS BOULEVARD 20",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "ODENSE SOE",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B4572253666",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "5220",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "83",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "\u002B4572253866",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "ef581617-0ff5-4556-96f2-574552e296cd",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "DKK",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "DK",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "ode@linklog.com",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "MAN",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2012-04-18T07:49:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "E  ",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2022-09-30T09:08:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "CD2",
-      "IsSet": true
-    },
+    "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
+    "GC_Code": "DNK",
+    "GC_Name": "Link Logistics A/S",
+    "GC_BusinessRegNo": "28659024",
+    "GC_BusinessRegNo2": "28659024",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "C.F. TIETGENS BOULEVARD 20",
+    "GC_Address2": "",
+    "GC_City": "ODENSE SOE",
+    "GC_Phone": "\u002B4572253666",
+    "GC_PostCode": "5220",
+    "GC_State": "83",
+    "GC_Fax": "\u002B4572253866",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "ef581617-0ff5-4556-96f2-574552e296cd",
+    "GC_RX_NKLocalCurrency": "DKK",
+    "GC_RN_NKCountryCode": "DK",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": true,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": true,
+    "GC_IsValid": true,
+    "GC_Email": "ode@linklog.com",
+    "GC_AddressMap": "",
+    "GC_ValidationStatus": "MAN",
+    "GC_SystemCreateTimeUtc": "2012-04-18T07:49:00",
+    "GC_SystemCreateUser": "E  ",
+    "GC_SystemLastEditTimeUtc": "2022-09-30T09:08:00",
+    "GC_SystemLastEditUser": "CD2",
     "OpCode": 3
   },
   {
-    "GC_PK": {
-      "Value": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "DNK",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics A/S",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "C.F. TIETGENS BOULEVARD 20",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "ODENSE SOE",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B4570104500",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "5220",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "83",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "\u002B4572253866",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "ef581617-0ff5-4556-96f2-574552e296cd",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "DKK",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "DK",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "ode@linklog.com",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "MAN",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2012-04-18T07:49:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "E  ",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2025-06-04T08:31:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
+    "GC_Code": "DNK",
+    "GC_Name": "Link Logistics A/S",
+    "GC_BusinessRegNo": "28659024",
+    "GC_BusinessRegNo2": "28659024",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "C.F. TIETGENS BOULEVARD 20",
+    "GC_Address2": "",
+    "GC_City": "ODENSE SOE",
+    "GC_Phone": "\u002B4570104500",
+    "GC_PostCode": "5220",
+    "GC_State": "83",
+    "GC_Fax": "\u002B4572253866",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "ef581617-0ff5-4556-96f2-574552e296cd",
+    "GC_RX_NKLocalCurrency": "DKK",
+    "GC_RN_NKCountryCode": "DK",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": true,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": true,
+    "GC_IsValid": true,
+    "GC_Email": "ode@linklog.com",
+    "GC_AddressMap": "",
+    "GC_ValidationStatus": "MAN",
+    "GC_SystemCreateTimeUtc": "2012-04-18T07:49:00",
+    "GC_SystemCreateUser": "E  ",
+    "GC_SystemLastEditTimeUtc": "2025-06-04T08:31:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 4
   },
   {
-    "GC_PK": {
-      "Value": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "DNK",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics A/S",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "C.F. TIETGENS BOULEVARD 20",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "ODENSE SOE",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B4570104500",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "5220",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "83",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "\u002B4572253866",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "ef581617-0ff5-4556-96f2-574552e296cd",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "DKK",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "DK",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "ode@linklog.com",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "MAN",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2012-04-18T07:49:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "E  ",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2025-06-04T08:31:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
+    "GC_Code": "DNK",
+    "GC_Name": "Link Logistics A/S",
+    "GC_BusinessRegNo": "28659024",
+    "GC_BusinessRegNo2": "28659024",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "C.F. TIETGENS BOULEVARD 20",
+    "GC_Address2": "",
+    "GC_City": "ODENSE SOE",
+    "GC_Phone": "\u002B4570104500",
+    "GC_PostCode": "5220",
+    "GC_State": "83",
+    "GC_Fax": "\u002B4572253866",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "ef581617-0ff5-4556-96f2-574552e296cd",
+    "GC_RX_NKLocalCurrency": "DKK",
+    "GC_RN_NKCountryCode": "DK",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": true,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": true,
+    "GC_IsValid": true,
+    "GC_Email": "ode@linklog.com",
+    "GC_AddressMap": "",
+    "GC_ValidationStatus": "MAN",
+    "GC_SystemCreateTimeUtc": "2012-04-18T07:49:00",
+    "GC_SystemCreateUser": "E  ",
+    "GC_SystemLastEditTimeUtc": "2025-06-04T08:31:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 3
   },
   {
-    "GC_PK": {
-      "Value": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
-      "IsSet": true
-    },
-    "GC_Code": {
-      "Value": "DNK",
-      "IsSet": true
-    },
-    "GC_Name": {
-      "Value": "Link Logistics A/S",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_BusinessRegNo2": {
-      "Value": "28659024",
-      "IsSet": true
-    },
-    "GC_CustomsRegistrationNo": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_Address1": {
-      "Value": "C.F. TIETGENS BOULEVARD 20",
-      "IsSet": true
-    },
-    "GC_Address2": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_City": {
-      "Value": "ODENSE SOE",
-      "IsSet": true
-    },
-    "GC_Phone": {
-      "Value": "\u002B4570104500",
-      "IsSet": true
-    },
-    "GC_PostCode": {
-      "Value": "5220",
-      "IsSet": true
-    },
-    "GC_State": {
-      "Value": "83",
-      "IsSet": true
-    },
-    "GC_Fax": {
-      "Value": "\u002B4572253866",
-      "IsSet": true
-    },
-    "GC_WebAddress": {
-      "Value": "www.linklog.com",
-      "IsSet": true
-    },
-    "GC_NoOfAccountingPeriods": {
-      "Value": 12,
-      "IsSet": true
-    },
-    "GC_StartDate": {
-      "Value": null,
-      "IsSet": true
-    },
-    "GC_OH_OrgProxy": {
-      "Value": "ef581617-0ff5-4556-96f2-574552e296cd",
-      "IsSet": true
-    },
-    "GC_RX_NKLocalCurrency": {
-      "Value": "DKK",
-      "IsSet": true
-    },
-    "GC_RN_NKCountryCode": {
-      "Value": "DK",
-      "IsSet": true
-    },
-    "GC_LocalDocLanguage": {
-      "Value": "DEF",
-      "IsSet": true
-    },
-    "GC_IsActive": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsReciprocal": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTRegistered": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsGSTCashBasis": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTRegistered": {
-      "Value": false,
-      "IsSet": true
-    },
-    "GC_IsWHTCashBasis": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_IsValid": {
-      "Value": true,
-      "IsSet": true
-    },
-    "GC_Email": {
-      "Value": "ode@linklog.com",
-      "IsSet": true
-    },
-    "GC_AddressMap": {
-      "Value": "",
-      "IsSet": true
-    },
-    "GC_ValidationStatus": {
-      "Value": "MAN",
-      "IsSet": true
-    },
-    "GC_SystemCreateTimeUtc": {
-      "Value": "2012-04-18T07:49:00",
-      "IsSet": true
-    },
-    "GC_SystemCreateUser": {
-      "Value": "E  ",
-      "IsSet": true
-    },
-    "GC_SystemLastEditTimeUtc": {
-      "Value": "2025-06-04T08:32:00",
-      "IsSet": true
-    },
-    "GC_SystemLastEditUser": {
-      "Value": "KJA",
-      "IsSet": true
-    },
+    "GC_PK": "77d10bc2-7024-451b-aee5-3e085e7adb8d",
+    "GC_Code": "DNK",
+    "GC_Name": "Link Logistics A/S",
+    "GC_BusinessRegNo": "28659024",
+    "GC_BusinessRegNo2": "28659024",
+    "GC_CustomsRegistrationNo": "",
+    "GC_Address1": "C.F. TIETGENS BOULEVARD 20",
+    "GC_Address2": "",
+    "GC_City": "ODENSE SOE",
+    "GC_Phone": "\u002B4570104500",
+    "GC_PostCode": "5220",
+    "GC_State": "83",
+    "GC_Fax": "\u002B4572253866",
+    "GC_WebAddress": "www.linklog.com",
+    "GC_NoOfAccountingPeriods": 12,
+    "GC_StartDate": null,
+    "GC_OH_OrgProxy": "ef581617-0ff5-4556-96f2-574552e296cd",
+    "GC_RX_NKLocalCurrency": "DKK",
+    "GC_RN_NKCountryCode": "DK",
+    "GC_LocalDocLanguage": "DEF",
+    "GC_IsActive": true,
+    "GC_IsReciprocal": true,
+    "GC_IsGSTRegistered": true,
+    "GC_IsGSTCashBasis": false,
+    "GC_IsWHTRegistered": false,
+    "GC_IsWHTCashBasis": true,
+    "GC_IsValid": true,
+    "GC_Email": "ode@linklog.com",
+    "GC_AddressMap": "",
+    "GC_ValidationStatus": "MAN",
+    "GC_SystemCreateTimeUtc": "2012-04-18T07:49:00",
+    "GC_SystemCreateUser": "E  ",
+    "GC_SystemLastEditTimeUtc": "2025-06-04T08:32:00",
+    "GC_SystemLastEditUser": "KJA",
     "OpCode": 4
   }
 ]
