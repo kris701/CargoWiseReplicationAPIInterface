@@ -158,6 +158,7 @@ namespace CargoWiseReplicationAPIInterface
 			{
 				case "INT":
 				case "MONEY":
+				case "DECIMAL":
 					return $"{value}";
 				case "BIT":
 					var strValue = value.ToString();
