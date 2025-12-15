@@ -157,6 +157,8 @@ namespace CargoWiseReplicationAPIInterface
 			switch (columnType)
 			{
 				case "INT":
+				case "SMALLINT":
+				case "TINYINT":
 				case "MONEY":
 				case "DECIMAL":
 					return $"{value}";
