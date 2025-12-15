@@ -152,6 +152,8 @@ namespace CargoWiseReplicationAPIInterface
 		{
 			if (value == null)
 				return "null";
+			if (columnType.StartsWith("DECIMAL("))
+				return $"{value}";
 			switch (columnType)
 			{
 				case "INT":
