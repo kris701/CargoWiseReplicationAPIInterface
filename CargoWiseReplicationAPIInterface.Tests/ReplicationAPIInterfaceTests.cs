@@ -1,5 +1,7 @@
-﻿using CargoWiseReplicationAPIInterface.Models.Changes;
+﻿using CargoWiseReplicationAPIInterface.Models;
+using CargoWiseReplicationAPIInterface.Models.Changes;
 using CargoWiseReplicationAPIInterface.Models.Summary;
+using CargoWiseReplicationAPIInterface.Tests.Mocks;
 using CargoWiseReplicationAPIInterface.Tests.Models;
 using System.Text.Json;
 
@@ -11,15 +13,17 @@ namespace CargoWiseReplicationAPIInterface.Tests
 		[TestMethod]
 		[DataRow("TestFiles/Changes/input1.json", "TestFiles/Changes/expected1.json")]
 		[DataRow("TestFiles/Changes/input3.json", "TestFiles/Changes/expected3.json")]
-		public void Can_ConvertChanges(string inputFile, string expectedFile)
+		public async Task Can_ConvertChanges(string inputFile, string expectedFile)
 		{
 			// ARRANGE
-			var repicationInterface = new ReplicationAPIInterface("", "", "");
+			var mockApi = new MockReplicationAPIService();
+			var repicationInterface = new ReplicationAPI(mockApi);
 			var changes = JsonSerializer.Deserialize<ChangesModel>(File.ReadAllText(inputFile));
 			Assert.IsNotNull(changes);
+			mockApi.ChangesToReturn = changes.Changes;
 
 			// ACT
-			var actual = repicationInterface.ConvertChanges(changes.Changes, typeof(GlbCompanyModel));
+			var actual = await repicationInterface.GetDetails<GlbCompanyModel>("0x00000000000000000000", "0xFFFFFFFFFFFFFFFFFFFF", "dbo", "GlbCompany");
 
 			// ASSERT
 			var expectedObject = JsonSerializer.Deserialize<List<GlbCompanyModel>>(File.ReadAllText(expectedFile));
