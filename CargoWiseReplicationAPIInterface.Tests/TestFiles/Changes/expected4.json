@@ -65,7 +65,7 @@
       "IsSet": true
     },
     "AH_ExchangeRate": {
-      "Value": 1000000000,
+      "Value": 1.00005,
       "IsSet": true
     },
     "AH_RX_NKTransactionCurrency": {

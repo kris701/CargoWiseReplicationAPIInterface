@@ -154,17 +154,17 @@ namespace CargoWiseReplicationAPIInterface
 			if (strVal == null)
 				return null;
 			if (columnType.StartsWith("DECIMAL("))
-				return Convert.ChangeType(strVal, typeof(double));
+				return Convert.ChangeType(strVal, typeof(double), CultureInfo.InvariantCulture);
 
 			switch (columnType)
 			{
 				case "INT":
 				case "SMALLINT":
 				case "TINYINT":
-					return Convert.ChangeType(strVal, typeof(int));
+					return Convert.ChangeType(strVal, typeof(int), CultureInfo.InvariantCulture);
 				case "MONEY":
 				case "DECIMAL":
-					return Convert.ChangeType(strVal, typeof(double));
+					return Convert.ChangeType(strVal, typeof(double), CultureInfo.InvariantCulture);
 				case "BIT":
 					if (strVal.ToUpper() == "TRUE")
 						return true;
