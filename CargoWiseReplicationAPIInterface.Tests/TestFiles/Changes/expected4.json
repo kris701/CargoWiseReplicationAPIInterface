@@ -1,0 +1,117 @@
+[
+  {
+    "AH_PK": {
+      "Value": "2c7601f1-6f64-466e-b208-7712abfbcc8c",
+      "IsSet": true
+    },
+    "AH_TransactionNum": {
+      "Value": "00002875",
+      "IsSet": true
+    },
+    "AH_Desc": {
+      "Value": "JOB REVENUE JOURNAL",
+      "IsSet": true
+    },
+    "AH_Ledger": {
+      "Value": "JC",
+      "IsSet": true
+    },
+    "AH_TransactionType": {
+      "Value": "JRJ",
+      "IsSet": true
+    },
+    "AH_TransactionCategory": {
+      "Value": "",
+      "IsSet": true
+    },
+    "AH_InvoiceTerm": {
+      "Value": "   ",
+      "IsSet": true
+    },
+    "AH_InvoiceTermDays": {
+      "Value": 0,
+      "IsSet": true
+    },
+    "AH_ReceiptType": {
+      "Value": "   ",
+      "IsSet": true
+    },
+    "AH_LocalTotal": {
+      "Value": null,
+      "IsSet": false
+    },
+    "AH_LocalTaxAmountOtherTaxes": {
+      "Value": 0,
+      "IsSet": true
+    },
+    "AH_InvoiceAmount": {
+      "Value": 0,
+      "IsSet": true
+    },
+    "AH_GSTAmount": {
+      "Value": 0,
+      "IsSet": true
+    },
+    "AH_OSTotal": {
+      "Value": 0,
+      "IsSet": true
+    },
+    "AH_OSTaxAmountOtherTaxes": {
+      "Value": 0,
+      "IsSet": true
+    },
+    "AH_OutstandingAmount": {
+      "Value": 0,
+      "IsSet": true
+    },
+    "AH_ExchangeRate": {
+      "Value": 1000000000,
+      "IsSet": true
+    },
+    "AH_RX_NKTransactionCurrency": {
+      "Value": "NOK",
+      "IsSet": true
+    },
+    "AH_PostDate": {
+      "Value": "2025-12-15T11:48:00",
+      "IsSet": true
+    },
+    "AH_InvoiceDate": {
+      "Value": "2025-12-15T11:48:00",
+      "IsSet": true
+    },
+    "AH_DueDate": {
+      "Value": null,
+      "IsSet": true
+    },
+    "AH_FullyPaidDate": {
+      "Value": null,
+      "IsSet": true
+    },
+    "AH_JH": {
+      "Value": null,
+      "IsSet": true
+    },
+    "AH_OH": {
+      "Value": null,
+      "IsSet": true
+    },
+    "AH_GC": {
+      "Value": "9816bab8-5f4b-4551-bc69-a3953c1ed0da",
+      "IsSet": true
+    },
+    "AH_SystemCreateTimeUtc": {
+      "Value": "2025-12-15T10:48:00",
+      "IsSet": true
+    },
+    "AH_SystemLastEditTimeUtc": {
+      "Value": "2025-12-15T10:48:00",
+      "IsSet": true
+    },
+    "AH_UploadType": {
+      "Value": "REP",
+      "IsSet": true
+    },
+    "OpCode": 2
+  }
+]

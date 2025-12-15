@@ -13,7 +13,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 		[TestMethod]
 		[DataRow("TestFiles/Changes/input1.json", "TestFiles/Changes/expected1.json")]
 		[DataRow("TestFiles/Changes/input3.json", "TestFiles/Changes/expected3.json")]
-		public async Task Can_ConvertChanges(string inputFile, string expectedFile)
+		public async Task Can_ConvertChanges_GlbCompany(string inputFile, string expectedFile)
 		{
 			// ARRANGE
 			var mockApi = new MockReplicationAPIService();
@@ -27,6 +27,27 @@ namespace CargoWiseReplicationAPIInterface.Tests
 
 			// ASSERT
 			var expectedObject = JsonSerializer.Deserialize<List<GlbCompanyModel>>(File.ReadAllText(expectedFile));
+			var expectedText = JsonSerializer.Serialize(expectedObject);
+			var actualText = JsonSerializer.Serialize(actual);
+			Assert.AreEqual(expectedText, actualText);
+		}
+
+		[TestMethod]
+		[DataRow("TestFiles/Changes/input4.json", "TestFiles/Changes/expected4.json")]
+		public async Task Can_ConvertChanges_AccTransactionHeader(string inputFile, string expectedFile)
+		{
+			// ARRANGE
+			var mockApi = new MockReplicationAPIService();
+			var repicationInterface = new ReplicationAPI(mockApi);
+			var changes = JsonSerializer.Deserialize<ChangesModel>(File.ReadAllText(inputFile));
+			Assert.IsNotNull(changes);
+			mockApi.ChangesToReturn = changes.Changes;
+
+			// ACT
+			var actual = await repicationInterface.GetDetails<AccTransactionHeader>("0x00000000000000000000", "0xFFFFFFFFFFFFFFFFFFFF", "dbo", "AccTransactionHeader");
+
+			// ASSERT
+			var expectedObject = JsonSerializer.Deserialize<List<AccTransactionHeader>>(File.ReadAllText(expectedFile));
 			var expectedText = JsonSerializer.Serialize(expectedObject);
 			var actualText = JsonSerializer.Serialize(actual);
 			Assert.AreEqual(expectedText, actualText);

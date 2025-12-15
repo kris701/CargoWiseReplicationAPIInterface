@@ -85,15 +85,18 @@ namespace CargoWiseReplicationAPIInterface
 
 			var typeDict = new Dictionary<string, string>();
 			var props = asType.GetProperties().ToList();
+			var operationProp = props.First(x => x.Name == "OpCode");
+			props = props.Where(x => x.PropertyType.Name.StartsWith("RepData")).ToList();
 			var propSet = BuildPropertySet(props);
-			props.RemoveAll(x => x.Name != "OpCode");
-			var operationProp = props[0];
+			var allProperties = new Dictionary<string, PropertyInfo>();
+			foreach (var prop in props)
+				allProperties.Add(prop.Name, prop);
 
 			while (currentChanges != null)
 			{
 				ExpandDictionary(typeDict, currentChanges, propSet);
 
-				ConvertAndInsertChanges(currentChanges.Data.Data.Items, typeDict, asType, returnList, operationProp);
+				ConvertAndInsertChanges(currentChanges.Data.Data.Items, typeDict, asType, returnList, allProperties, operationProp);
 
 				currentChanges = await _api.GetChangesFromLast(currentChanges, maxLsn, schemaName, tableName);
 			}
@@ -117,75 +120,66 @@ namespace CargoWiseReplicationAPIInterface
 			return propSet;
 		}
 
-		private void ConvertAndInsertChanges(List<ChangesDataDataItems> changes, Dictionary<string, string> typeDict, Type asType, IList returnList, PropertyInfo operationProp)
+		private void ConvertAndInsertChanges(List<ChangesDataDataItems> changes, Dictionary<string, string> typeDict, Type asType, IList returnList, Dictionary<string, PropertyInfo> allProperties, PropertyInfo operationProp)
 		{
 			var ordered = changes.OrderBy(x => double.Parse(x.Version));
 			foreach (var change in ordered)
 			{
 				foreach (var chamges in change.Changes)
 				{
-					var asJson = MergeDataToJson(chamges.Data, typeDict);
-					var newItem = JsonSerializer.Deserialize(asJson, asType, _options);
-					if (newItem != null)
+					var newItem = Activator.CreateInstance(asType);
+					operationProp.SetValue(newItem, chamges.Operation);
+
+					foreach(var target in chamges.Data)
 					{
-						operationProp.SetValue(newItem, chamges.Operation);
-						returnList.Add(newItem);
+						if (allProperties.ContainsKey(target.ColumnName))
+						{
+							var propVal = (RepData)allProperties[target.ColumnName].GetValue(newItem);
+							propVal.Value = ConvertValue(target.Value, typeDict[target.ColumnName]);
+							propVal.IsSet = true;
+							allProperties[target.ColumnName].SetValue(newItem, propVal);
+						}
 					}
+
+					returnList.Add(newItem);
 				}
 			}
 		}
 
-		private string MergeDataToJson(List<ChangesDataDataItemsChangesData> data, Dictionary<string, string> columnMap)
-		{
-			var sb = new StringBuilder();
-
-			sb.Append("{");
-			foreach (var change in data)
-				if (columnMap.ContainsKey(change.ColumnName))
-					sb.Append($"\"{change.ColumnName}\":{ConvertValueToJson(change.Value, columnMap[change.ColumnName])},");
-			sb.Append("}");
-
-			return sb.ToString();
-		}
-
-		private string ConvertValueToJson(object value, string columnType)
+		private object? ConvertValue(object? value, string columnType)
 		{
 			if (value == null)
-				return "null";
+				return null;
+			var strVal = value.ToString();
+			if (strVal == null)
+				return null;
 			if (columnType.StartsWith("DECIMAL("))
-				return $"{value}";
+				return Convert.ChangeType(strVal, typeof(double));
+
 			switch (columnType)
 			{
 				case "INT":
 				case "SMALLINT":
 				case "TINYINT":
+					return Convert.ChangeType(strVal, typeof(int));
 				case "MONEY":
 				case "DECIMAL":
-					return $"{value}";
+					return Convert.ChangeType(strVal, typeof(double));
 				case "BIT":
-					var strValue = value.ToString();
-					if (strValue == null)
-						return "false";
-					if (strValue.ToUpper() == "TRUE")
-						return "true";
-					return "false";
+					if (strVal.ToUpper() == "TRUE")
+						return true;
+					return false;
 				case "DATETIME":
 				case "DATETIME2":
 				case "SMALLDATETIME":
-					var strValue2 = value.ToString();
-					if (strValue2 == null)
-						return "null";
-					var parsed = DateTime.ParseExact(strValue2, "MM/dd/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-					return $"\"{parsed.ToString("O")}\"";
+					var parsed = DateTime.ParseExact(strVal, "MM/dd/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+					return parsed;
 				default:
-					var strValue3 = value.ToString();
-					if (strValue3 == null)
-						return "null";
-					strValue3 = strValue3.Replace("\"", "'");
-					strValue3 = strValue3.Replace("\r", "\\r");
-					strValue3 = strValue3.Replace("\n", "\\n");
-					strValue3 = strValue3.Replace("\\", "\\\\");
-					return $"\"{strValue3}\"";
+					strVal = strVal.Replace("\"", "'");
+					strVal = strVal.Replace("\r", "\\r");
+					strVal = strVal.Replace("\n", "\\n");
+					strVal = strVal.Replace("\\", "\\\\");
+					return strVal;
 			}
 		}
 
