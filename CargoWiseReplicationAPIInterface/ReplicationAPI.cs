@@ -1,4 +1,5 @@
-﻿using CargoWiseReplicationAPIInterface.Models;
+﻿using CargoWiseReplicationAPIInterface.Exceptions;
+using CargoWiseReplicationAPIInterface.Models;
 using CargoWiseReplicationAPIInterface.Models.Changes;
 using CargoWiseReplicationAPIInterface.Models.Summary;
 using CargoWiseReplicationAPIInterface.Services;
@@ -125,11 +126,17 @@ namespace CargoWiseReplicationAPIInterface
 				foreach (var chamges in change.Changes)
 				{
 					var asJson = MergeDataToJson(chamges.Data, typeDict);
-					var newItem = JsonSerializer.Deserialize(asJson, asType, _options);
-					if (newItem != null)
+					try
 					{
-						operationProp.SetValue(newItem, chamges.Operation);
-						returnList.Add(newItem);
+						var newItem = JsonSerializer.Deserialize(asJson, asType, _options);
+						if (newItem != null)
+						{
+							operationProp.SetValue(newItem, chamges.Operation);
+							returnList.Add(newItem);
+						}
+					}
+					catch(Exception ex) {
+						throw new ParsingException(ex.Message, asJson, ex);
 					}
 				}
 			}
@@ -185,6 +192,7 @@ namespace CargoWiseReplicationAPIInterface
 					strValue3 = strValue3.Replace("\r", "\\r");
 					strValue3 = strValue3.Replace("\n", "\\n");
 					strValue3 = strValue3.Replace("\\", "\\\\");
+					strValue3 = strValue3.Replace("/", "//");
 					return $"\"{strValue3}\"";
 			}
 		}
