@@ -192,7 +192,6 @@ namespace CargoWiseReplicationAPIInterface
 					strValue3 = strValue3.Replace("\r", "\\r");
 					strValue3 = strValue3.Replace("\n", "\\n");
 					strValue3 = strValue3.Replace("\\", "\\\\");
-					strValue3 = strValue3.Replace("/", "//");
 					return $"\"{strValue3}\"";
 			}
 		}
