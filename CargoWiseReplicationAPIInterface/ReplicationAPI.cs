@@ -176,6 +176,7 @@ namespace CargoWiseReplicationAPIInterface
 					if (strValue.ToUpper() == "TRUE")
 						return "true";
 					return "false";
+				case "DATE":
 				case "DATETIME":
 				case "DATETIME2":
 				case "SMALLDATETIME":
