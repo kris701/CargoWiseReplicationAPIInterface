@@ -7,5 +7,4 @@
   </Folder>
   <Project Path="CargoWiseReplicationAPIInterface.Tests/CargoWiseReplicationAPIInterface.Tests.csproj" />
   <Project Path="CargoWiseReplicationAPIInterface/CargoWiseReplicationAPIInterface.csproj" />
-  <Project Path="DevTestProj/DevTestProj.csproj" Id="769f6e8f-45fc-4d96-8cbe-e1b8ce9b4fc8" />
 </Solution>
