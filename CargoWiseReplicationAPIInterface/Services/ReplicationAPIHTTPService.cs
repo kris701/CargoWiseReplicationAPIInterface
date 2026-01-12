@@ -74,31 +74,28 @@ namespace CargoWiseReplicationAPIInterface.Services
 			if (last.Data.Data.CurrentItemCount == last.Data.Data.ItemsPerPage)
 			{
 				var detailsResponse = await _client.GetAsync<ChangesRequest, string>(
-				new ChangesRequest()
-					{
-						AfterLSN = last.Data.Data.NextRequestParams.AfterLSN,
-						MaxLSN = maxLsn,
-						AfterSeqVal = last.Data.Data.NextRequestParams.AfterSeqVal,
-						AfterCommandId = last.Data.Data.NextRequestParams.AfterCommandId,
-						AfterOperation = last.Data.Data.NextRequestParams.AfterOperation,
-						SchemaName = schemaName,
-						TableName = tableName,
-						PageSize = PageSize
-					},
-					URL + "/change-detail"
-				);
+					new ChangesRequest()
+						{
+							AfterLSN = last.Data.Data.NextRequestParams.AfterLSN,
+							MaxLSN = maxLsn,
+							AfterSeqVal = last.Data.Data.NextRequestParams.AfterSeqVal,
+							AfterCommandId = last.Data.Data.NextRequestParams.AfterCommandId,
+							AfterOperation = last.Data.Data.NextRequestParams.AfterOperation,
+							SchemaName = schemaName,
+							TableName = tableName,
+							PageSize = PageSize
+						},
+						URL + "/change-detail"
+					);
 				detailsResponse = ReplaceInvalidCharacters(detailsResponse);
-				var response = JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
-				if (response == null)
-					throw new Exception("Invalid response!");
-
-				return response;
+				return JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
 			}
 			return null;
 		}
 
 		private string ReplaceInvalidCharacters(string text)
 		{
+			text = text.Replace("", "");
 			text = text.Replace("\u001e", "");
 			return text;
 		}
