@@ -75,18 +75,18 @@ namespace CargoWiseReplicationAPIInterface.Services
 			{
 				var detailsResponse = await _client.GetAsync<ChangesRequest, string>(
 					new ChangesRequest()
-						{
-							AfterLSN = last.Data.Data.NextRequestParams.AfterLSN,
-							MaxLSN = maxLsn,
-							AfterSeqVal = last.Data.Data.NextRequestParams.AfterSeqVal,
-							AfterCommandId = last.Data.Data.NextRequestParams.AfterCommandId,
-							AfterOperation = last.Data.Data.NextRequestParams.AfterOperation,
-							SchemaName = schemaName,
-							TableName = tableName,
-							PageSize = PageSize
-						},
-						URL + "/change-detail"
-					);
+					{
+						AfterLSN = last.Data.Data.NextRequestParams.AfterLSN,
+						MaxLSN = maxLsn,
+						AfterSeqVal = last.Data.Data.NextRequestParams.AfterSeqVal,
+						AfterCommandId = last.Data.Data.NextRequestParams.AfterCommandId,
+						AfterOperation = last.Data.Data.NextRequestParams.AfterOperation,
+						SchemaName = schemaName,
+						TableName = tableName,
+						PageSize = PageSize
+					},
+					URL + "/change-detail"
+				);
 				detailsResponse = ReplaceInvalidCharacters(detailsResponse);
 				return JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
 			}
@@ -94,9 +94,9 @@ namespace CargoWiseReplicationAPIInterface.Services
 		}
 
 		private string ReplaceInvalidCharacters(string text)
-		{
-			text = text.Replace("", "");
+		{	
 			text = text.Replace("\u001e", "");
+			text = text.Replace("\\u001e", "");
 			return text;
 		}
 	}
