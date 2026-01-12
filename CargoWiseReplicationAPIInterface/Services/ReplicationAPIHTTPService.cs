@@ -4,6 +4,7 @@ using SerializableHttps;
 using SerializableHttps.AuthenticationMethods;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Text.Json;
 
 namespace CargoWiseReplicationAPIInterface.Services
 {
@@ -50,7 +51,7 @@ namespace CargoWiseReplicationAPIInterface.Services
 
 		public async Task<ChangesResponse> GetChanges(string afterLsn, string maxLsn, string schemaName, string tableName)
 		{
-			return await _client.GetAsync<ChangesRequest, ChangesResponse>(
+			var detailsResponse = await _client.GetAsync<ChangesRequest, string>(
 				new ChangesRequest()
 				{
 					AfterLSN = afterLsn,
@@ -61,14 +62,19 @@ namespace CargoWiseReplicationAPIInterface.Services
 				},
 				URL + "/change-detail"
 			);
+			detailsResponse = ReplaceInvalidCharacters(detailsResponse);
+			var response = JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
+			if (response == null)
+				throw new Exception("Invalid response!");
+			return response;
 		}
 
 		public async Task<ChangesResponse?> GetChangesFromLast(ChangesResponse last, string maxLsn, string schemaName, string tableName)
 		{
 			if (last.Data.Data.CurrentItemCount == last.Data.Data.ItemsPerPage)
 			{
-				return await _client.GetAsync<ChangesRequest, ChangesResponse>(
-					new ChangesRequest()
+				var detailsResponse = await _client.GetAsync<ChangesRequest, string>(
+				new ChangesRequest()
 					{
 						AfterLSN = last.Data.Data.NextRequestParams.AfterLSN,
 						MaxLSN = maxLsn,
@@ -81,8 +87,20 @@ namespace CargoWiseReplicationAPIInterface.Services
 					},
 					URL + "/change-detail"
 				);
+				detailsResponse = ReplaceInvalidCharacters(detailsResponse);
+				var response = JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
+				if (response == null)
+					throw new Exception("Invalid response!");
+
+				return response;
 			}
 			return null;
+		}
+
+		private string ReplaceInvalidCharacters(string text)
+		{
+			text = text.Replace("\u001e", "");
+			return text;
 		}
 	}
 }
