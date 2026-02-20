@@ -2,7 +2,7 @@
 
 namespace CargoWiseReplicationAPIInterface.Models.Changes
 {
-	public class ChangesDataDataNextRequestParams
+	public class ChangesDataNextRequestParams
 	{
 		[JsonPropertyName("after_lsn")]
 		public string AfterLSN { get; set; }

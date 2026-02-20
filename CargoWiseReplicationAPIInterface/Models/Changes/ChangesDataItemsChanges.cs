@@ -2,11 +2,11 @@
 
 namespace CargoWiseReplicationAPIInterface.Models.Changes
 {
-	public class ChangesDataDataItemsChanges
+	public class ChangesDataItemsChanges
 	{
 		[JsonPropertyName("__$operation")]
 		public int Operation { get; set; }
 		[JsonPropertyName("data")]
-		public List<ChangesDataDataItemsChangesData> Data { get; set; }
+		public List<ChangesDataItemsChangesData> Data { get; set; }
 	}
 }

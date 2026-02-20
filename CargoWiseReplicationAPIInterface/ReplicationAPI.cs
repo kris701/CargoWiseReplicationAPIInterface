@@ -94,7 +94,7 @@ namespace CargoWiseReplicationAPIInterface
 			{
 				ExpandDictionary(typeDict, currentChanges, propSet);
 
-				ConvertAndInsertChanges(currentChanges.Data.Data.Items, typeDict, asType, returnList, operationProp);
+				ConvertAndInsertChanges(currentChanges.Data.Items, typeDict, asType, returnList, operationProp);
 
 				currentChanges = await _api.GetChangesFromLast(currentChanges, maxLsn, schemaName, tableName);
 			}
@@ -104,7 +104,7 @@ namespace CargoWiseReplicationAPIInterface
 
 		private void ExpandDictionary(Dictionary<string, string> dict, ChangesResponse response, HashSet<string> propSet)
 		{
-			foreach (var item in response.Data.Data.Items)
+			foreach (var item in response.Data.Items)
 				foreach (var col in item.Columns)
 					if (propSet.Contains(col.Name) && !dict.ContainsKey(col.Name))
 						dict.Add(col.Name, col.Type.ToUpper());
@@ -118,7 +118,7 @@ namespace CargoWiseReplicationAPIInterface
 			return propSet;
 		}
 
-		private void ConvertAndInsertChanges(List<ChangesDataDataItems> changes, Dictionary<string, string> typeDict, Type asType, IList returnList, PropertyInfo operationProp)
+		private void ConvertAndInsertChanges(List<ChangesDataItems> changes, Dictionary<string, string> typeDict, Type asType, IList returnList, PropertyInfo operationProp)
 		{
 			var ordered = changes.OrderBy(x => double.Parse(x.Version));
 			foreach (var change in ordered)
@@ -142,7 +142,7 @@ namespace CargoWiseReplicationAPIInterface
 			}
 		}
 
-		private string MergeDataToJson(List<ChangesDataDataItemsChangesData> data, Dictionary<string, string> columnMap)
+		private string MergeDataToJson(List<ChangesDataItemsChangesData> data, Dictionary<string, string> columnMap)
 		{
 			var sb = new StringBuilder();
 

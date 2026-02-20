@@ -2,7 +2,7 @@
 
 namespace CargoWiseReplicationAPIInterface.Models.Changes
 {
-	public class ChangesDataDataItemsColumns
+	public class ChangesDataItemsColumns
 	{
 		[JsonPropertyName("name")]
 		public string Name { get; set; }

@@ -4,7 +4,13 @@ namespace CargoWiseReplicationAPIInterface.Models.Changes
 {
 	public class ChangesData
 	{
-		[JsonPropertyName("data")]
-		public ChangesDataData Data { get; set; }
+		[JsonPropertyName("currentItemCount")]
+		public int CurrentItemCount { get; set; }
+		[JsonPropertyName("itemsPerPage")]
+		public int ItemsPerPage { get; set; }
+		[JsonPropertyName("nextRequestParams")]
+		public ChangesDataNextRequestParams NextRequestParams { get; set; }
+		[JsonPropertyName("items")]
+		public List<ChangesDataItems> Items { get; set; }
 	}
 }

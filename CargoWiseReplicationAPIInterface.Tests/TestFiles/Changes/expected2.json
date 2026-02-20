@@ -1,1247 +1,1286 @@
 {
-  "apiVersion": "25.9.10.739",
+  "apiVersion": "25.12.3.632",
   "data": {
-    "data": {
-      "currentItemCount": 6,
-      "itemsPerPage": 100,
-      "nextRequestParams": {
-        "after_lsn": "0x0002DE31000682C20003",
-        "after_seqval": "0xFFFFFFFFFFFFFFFFFFFF",
-        "after_command_id": 2147483647,
-        "after_operation": 4
-      },
-      "items": [
-        {
-          "version": "8313.21",
-          "schemaChangeCount": 2,
-          "changes": [
-            {
-              "__$operation": 3,
-              "data": [
-                {
-                  "columnName": "GC_PK",
-                  "value": "2bda56a0-f50a-4f55-ba47-101ce36b0f33"
-                },
-                {
-                  "columnName": "GC_Code",
-                  "value": "USA"
-                },
-                {
-                  "columnName": "GC_Name",
-                  "value": "Link Logistics US Inc"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo",
-                  "value": "82-2375963"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo2",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_CustomsRegistrationNo",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_Address1",
-                  "value": "274 RARITAN CENTER PKWY"
-                },
-                {
-                  "columnName": "GC_Address2",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_City",
-                  "value": "EDISON"
-                },
-                {
-                  "columnName": "GC_Phone",
-                  "value": "\u002B17325431001"
-                },
-                {
-                  "columnName": "GC_PostCode",
-                  "value": "08837-3610"
-                },
-                {
-                  "columnName": "GC_State",
-                  "value": "NJ"
-                },
-                {
-                  "columnName": "GC_Fax",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_WebAddress",
-                  "value": "www.linklog.com"
-                },
-                {
-                  "columnName": "GC_NoOfAccountingPeriods",
-                  "value": "12"
-                },
-                {
-                  "columnName": "GC_PeriodFormat",
-                  "value": "CAL"
-                },
-                {
-                  "columnName": "GC_StartDate",
-                  "value": null
-                },
-                {
-                  "columnName": "GC_PeriodEndWeekDay",
-                  "value": "FRI"
-                },
-                {
-                  "columnName": "GC_GLCurrentPeriod",
-                  "value": "200001"
-                },
-                {
-                  "columnName": "GC_ARAPCurrentPeriod",
-                  "value": "200001"
-                },
-                {
-                  "columnName": "GC_GLClosedPeriod",
-                  "value": "200001"
-                },
-                {
-                  "columnName": "GC_ARAPClosedPeriod",
-                  "value": "200001"
-                },
-                {
-                  "columnName": "GC_OH_OrgProxy",
-                  "value": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8"
-                },
-                {
-                  "columnName": "GC_ExRateDisplayMode",
-                  "value": "IUL"
-                },
-                {
-                  "columnName": "GC_ExRateDecimals",
-                  "value": "4"
-                },
-                {
-                  "columnName": "GC_RX_NKLocalCurrency",
-                  "value": "USD"
-                },
-                {
-                  "columnName": "GC_RN_NKCountryCode",
-                  "value": "US"
-                },
-                {
-                  "columnName": "GC_LocalDocLanguage",
-                  "value": "DEF"
-                },
-                {
-                  "columnName": "GC_IsActive",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsReciprocal",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTRegistered",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsGSTCashBasis",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTRegistered",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTCashBasis",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsValid",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_Email",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_AddressMap",
-                  "value": "SNA1[0-2]SA1[4-22]"
-                },
-                {
-                  "columnName": "GC_ValidationStatus",
-                  "value": "VAD"
-                },
-                {
-                  "columnName": "GC_SystemCreateTimeUtc",
-                  "value": "08/22/2017 11:27:00"
-                },
-                {
-                  "columnName": "GC_SystemCreateUser",
-                  "value": "CD2"
-                },
-                {
-                  "columnName": "GC_SystemLastEditTimeUtc",
-                  "value": "01/12/2024 15:12:00"
-                },
-                {
-                  "columnName": "GC_SystemLastEditUser",
-                  "value": "KJA"
-                }
-              ]
-            },
-            {
-              "__$operation": 4,
-              "data": [
-                {
-                  "columnName": "GC_PK",
-                  "value": "2bda56a0-f50a-4f55-ba47-101ce36b0f33"
-                },
-                {
-                  "columnName": "GC_Code",
-                  "value": "USA"
-                },
-                {
-                  "columnName": "GC_Name",
-                  "value": "Link Logistics US Inc"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo",
-                  "value": "82-2375963"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo2",
-                  "value": "82-2375963"
-                },
-                {
-                  "columnName": "GC_CustomsRegistrationNo",
-                  "value": "82-2375963"
-                },
-                {
-                  "columnName": "GC_Address1",
-                  "value": "274 RARITAN CENTER PKWY"
-                },
-                {
-                  "columnName": "GC_Address2",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_City",
-                  "value": "EDISON"
-                },
-                {
-                  "columnName": "GC_Phone",
-                  "value": "\u002B17325431001"
-                },
-                {
-                  "columnName": "GC_PostCode",
-                  "value": "08837-3610"
-                },
-                {
-                  "columnName": "GC_State",
-                  "value": "NJ"
-                },
-                {
-                  "columnName": "GC_Fax",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_WebAddress",
-                  "value": "www.linklog.com"
-                },
-                {
-                  "columnName": "GC_NoOfAccountingPeriods",
-                  "value": "12"
-                },
-                {
-                  "columnName": "GC_PeriodFormat",
-                  "value": "CAL"
-                },
-                {
-                  "columnName": "GC_StartDate",
-                  "value": "09/01/2017 00:00:00"
-                },
-                {
-                  "columnName": "GC_PeriodEndWeekDay",
-                  "value": "FRI"
-                },
-                {
-                  "columnName": "GC_GLCurrentPeriod",
-                  "value": "200001"
-                },
-                {
-                  "columnName": "GC_ARAPCurrentPeriod",
-                  "value": "200001"
-                },
-                {
-                  "columnName": "GC_GLClosedPeriod",
-                  "value": "200001"
-                },
-                {
-                  "columnName": "GC_ARAPClosedPeriod",
-                  "value": "200001"
-                },
-                {
-                  "columnName": "GC_OH_OrgProxy",
-                  "value": "c375dfe2-ed6b-459d-b8a1-8b75c6f860c8"
-                },
-                {
-                  "columnName": "GC_ExRateDisplayMode",
-                  "value": "IUL"
-                },
-                {
-                  "columnName": "GC_ExRateDecimals",
-                  "value": "4"
-                },
-                {
-                  "columnName": "GC_RX_NKLocalCurrency",
-                  "value": "USD"
-                },
-                {
-                  "columnName": "GC_RN_NKCountryCode",
-                  "value": "US"
-                },
-                {
-                  "columnName": "GC_LocalDocLanguage",
-                  "value": "DEF"
-                },
-                {
-                  "columnName": "GC_IsActive",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsReciprocal",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTRegistered",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsGSTCashBasis",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTRegistered",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTCashBasis",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsValid",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_Email",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_AddressMap",
-                  "value": "SNA1[0-2]SA1[4-22]"
-                },
-                {
-                  "columnName": "GC_ValidationStatus",
-                  "value": "VAD"
-                },
-                {
-                  "columnName": "GC_SystemCreateTimeUtc",
-                  "value": "08/22/2017 11:27:00"
-                },
-                {
-                  "columnName": "GC_SystemCreateUser",
-                  "value": "CD2"
-                },
-                {
-                  "columnName": "GC_SystemLastEditTimeUtc",
-                  "value": "12/17/2024 12:50:00"
-                },
-                {
-                  "columnName": "GC_SystemLastEditUser",
-                  "value": "KJA"
-                }
-              ]
-            }
-          ],
-          "columns": [
-            {
-              "name": "GC_PK",
-              "type": "uniqueidentifier"
-            },
-            {
-              "name": "GC_Code",
-              "type": "char"
-            },
-            {
-              "name": "GC_Name",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_BusinessRegNo",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_BusinessRegNo2",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_CustomsRegistrationNo",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_Address1",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_Address2",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_City",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_Phone",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_PostCode",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_State",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_Fax",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_WebAddress",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_NoOfAccountingPeriods",
-              "type": "int"
-            },
-            {
-              "name": "GC_PeriodFormat",
-              "type": "char"
-            },
-            {
-              "name": "GC_StartDate",
-              "type": "smalldatetime"
-            },
-            {
-              "name": "GC_PeriodEndWeekDay",
-              "type": "char"
-            },
-            {
-              "name": "GC_GLCurrentPeriod",
-              "type": "int"
-            },
-            {
-              "name": "GC_ARAPCurrentPeriod",
-              "type": "int"
-            },
-            {
-              "name": "GC_GLClosedPeriod",
-              "type": "int"
-            },
-            {
-              "name": "GC_ARAPClosedPeriod",
-              "type": "int"
-            },
-            {
-              "name": "GC_OH_OrgProxy",
-              "type": "uniqueidentifier"
-            },
-            {
-              "name": "GC_ExRateDisplayMode",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_ExRateDecimals",
-              "type": "tinyint"
-            },
-            {
-              "name": "GC_RX_NKLocalCurrency",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_RN_NKCountryCode",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_LocalDocLanguage",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_IsActive",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsReciprocal",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsGSTRegistered",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsGSTCashBasis",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsWHTRegistered",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsWHTCashBasis",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsValid",
-              "type": "bit"
-            },
-            {
-              "name": "GC_Email",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_AddressMap",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_ValidationStatus",
-              "type": "char"
-            },
-            {
-              "name": "GC_SystemCreateTimeUtc",
-              "type": "smalldatetime"
-            },
-            {
-              "name": "GC_SystemCreateUser",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_SystemLastEditTimeUtc",
-              "type": "smalldatetime"
-            },
-            {
-              "name": "GC_SystemLastEditUser",
-              "type": "varchar"
-            }
-          ]
-        },
-        {
-          "version": "8804.20",
-          "schemaChangeCount": 4,
-          "changes": [
-            {
-              "__$operation": 3,
-              "data": [
-                {
-                  "columnName": "GC_PK",
-                  "value": "77d10bc2-7024-451b-aee5-3e085e7adb8d"
-                },
-                {
-                  "columnName": "GC_Code",
-                  "value": "DNK"
-                },
-                {
-                  "columnName": "GC_Name",
-                  "value": "Link Logistics A/S"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo",
-                  "value": "28659024"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo2",
-                  "value": "28659024"
-                },
-                {
-                  "columnName": "GC_CustomsRegistrationNo",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_Address1",
-                  "value": "C.F. TIETGENS BOULEVARD 20"
-                },
-                {
-                  "columnName": "GC_Address2",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_City",
-                  "value": "ODENSE SOE"
-                },
-                {
-                  "columnName": "GC_Phone",
-                  "value": "\u002B4572253666"
-                },
-                {
-                  "columnName": "GC_PostCode",
-                  "value": "5220"
-                },
-                {
-                  "columnName": "GC_State",
-                  "value": "83"
-                },
-                {
-                  "columnName": "GC_Fax",
-                  "value": "\u002B4572253866"
-                },
-                {
-                  "columnName": "GC_WebAddress",
-                  "value": "www.linklog.com"
-                },
-                {
-                  "columnName": "GC_NoOfAccountingPeriods",
-                  "value": "12"
-                },
-                {
-                  "columnName": "GC_StartDate",
-                  "value": null
-                },
-                {
-                  "columnName": "GC_OH_OrgProxy",
-                  "value": "ef581617-0ff5-4556-96f2-574552e296cd"
-                },
-                {
-                  "columnName": "GC_RX_NKLocalCurrency",
-                  "value": "DKK"
-                },
-                {
-                  "columnName": "GC_RN_NKCountryCode",
-                  "value": "DK"
-                },
-                {
-                  "columnName": "GC_LocalDocLanguage",
-                  "value": "DEF"
-                },
-                {
-                  "columnName": "GC_IsActive",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsReciprocal",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTRegistered",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTCashBasis",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTRegistered",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTCashBasis",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsValid",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_Email",
-                  "value": "ode@linklog.com"
-                },
-                {
-                  "columnName": "GC_AddressMap",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_ValidationStatus",
-                  "value": "MAN"
-                },
-                {
-                  "columnName": "GC_SystemCreateTimeUtc",
-                  "value": "04/18/2012 07:49:00"
-                },
-                {
-                  "columnName": "GC_SystemCreateUser",
-                  "value": "E  "
-                },
-                {
-                  "columnName": "GC_SystemLastEditTimeUtc",
-                  "value": "09/30/2022 09:08:00"
-                },
-                {
-                  "columnName": "GC_SystemLastEditUser",
-                  "value": "CD2"
-                }
-              ]
-            },
-            {
-              "__$operation": 4,
-              "data": [
-                {
-                  "columnName": "GC_PK",
-                  "value": "77d10bc2-7024-451b-aee5-3e085e7adb8d"
-                },
-                {
-                  "columnName": "GC_Code",
-                  "value": "DNK"
-                },
-                {
-                  "columnName": "GC_Name",
-                  "value": "Link Logistics A/S"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo",
-                  "value": "28659024"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo2",
-                  "value": "28659024"
-                },
-                {
-                  "columnName": "GC_CustomsRegistrationNo",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_Address1",
-                  "value": "C.F. TIETGENS BOULEVARD 20"
-                },
-                {
-                  "columnName": "GC_Address2",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_City",
-                  "value": "ODENSE SOE"
-                },
-                {
-                  "columnName": "GC_Phone",
-                  "value": "\u002B4570104500"
-                },
-                {
-                  "columnName": "GC_PostCode",
-                  "value": "5220"
-                },
-                {
-                  "columnName": "GC_State",
-                  "value": "83"
-                },
-                {
-                  "columnName": "GC_Fax",
-                  "value": "\u002B4572253866"
-                },
-                {
-                  "columnName": "GC_WebAddress",
-                  "value": "www.linklog.com"
-                },
-                {
-                  "columnName": "GC_NoOfAccountingPeriods",
-                  "value": "12"
-                },
-                {
-                  "columnName": "GC_StartDate",
-                  "value": null
-                },
-                {
-                  "columnName": "GC_OH_OrgProxy",
-                  "value": "ef581617-0ff5-4556-96f2-574552e296cd"
-                },
-                {
-                  "columnName": "GC_RX_NKLocalCurrency",
-                  "value": "DKK"
-                },
-                {
-                  "columnName": "GC_RN_NKCountryCode",
-                  "value": "DK"
-                },
-                {
-                  "columnName": "GC_LocalDocLanguage",
-                  "value": "DEF"
-                },
-                {
-                  "columnName": "GC_IsActive",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsReciprocal",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTRegistered",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTCashBasis",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTRegistered",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTCashBasis",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsValid",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_Email",
-                  "value": "ode@linklog.com"
-                },
-                {
-                  "columnName": "GC_AddressMap",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_ValidationStatus",
-                  "value": "MAN"
-                },
-                {
-                  "columnName": "GC_SystemCreateTimeUtc",
-                  "value": "04/18/2012 07:49:00"
-                },
-                {
-                  "columnName": "GC_SystemCreateUser",
-                  "value": "E  "
-                },
-                {
-                  "columnName": "GC_SystemLastEditTimeUtc",
-                  "value": "06/04/2025 08:31:00"
-                },
-                {
-                  "columnName": "GC_SystemLastEditUser",
-                  "value": "KJA"
-                }
-              ]
-            },
-            {
-              "__$operation": 3,
-              "data": [
-                {
-                  "columnName": "GC_PK",
-                  "value": "77d10bc2-7024-451b-aee5-3e085e7adb8d"
-                },
-                {
-                  "columnName": "GC_Code",
-                  "value": "DNK"
-                },
-                {
-                  "columnName": "GC_Name",
-                  "value": "Link Logistics A/S"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo",
-                  "value": "28659024"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo2",
-                  "value": "28659024"
-                },
-                {
-                  "columnName": "GC_CustomsRegistrationNo",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_Address1",
-                  "value": "C.F. TIETGENS BOULEVARD 20"
-                },
-                {
-                  "columnName": "GC_Address2",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_City",
-                  "value": "ODENSE SOE"
-                },
-                {
-                  "columnName": "GC_Phone",
-                  "value": "\u002B4570104500"
-                },
-                {
-                  "columnName": "GC_PostCode",
-                  "value": "5220"
-                },
-                {
-                  "columnName": "GC_State",
-                  "value": "83"
-                },
-                {
-                  "columnName": "GC_Fax",
-                  "value": "\u002B4572253866"
-                },
-                {
-                  "columnName": "GC_WebAddress",
-                  "value": "www.linklog.com"
-                },
-                {
-                  "columnName": "GC_NoOfAccountingPeriods",
-                  "value": "12"
-                },
-                {
-                  "columnName": "GC_StartDate",
-                  "value": null
-                },
-                {
-                  "columnName": "GC_OH_OrgProxy",
-                  "value": "ef581617-0ff5-4556-96f2-574552e296cd"
-                },
-                {
-                  "columnName": "GC_RX_NKLocalCurrency",
-                  "value": "DKK"
-                },
-                {
-                  "columnName": "GC_RN_NKCountryCode",
-                  "value": "DK"
-                },
-                {
-                  "columnName": "GC_LocalDocLanguage",
-                  "value": "DEF"
-                },
-                {
-                  "columnName": "GC_IsActive",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsReciprocal",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTRegistered",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTCashBasis",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTRegistered",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTCashBasis",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsValid",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_Email",
-                  "value": "ode@linklog.com"
-                },
-                {
-                  "columnName": "GC_AddressMap",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_ValidationStatus",
-                  "value": "MAN"
-                },
-                {
-                  "columnName": "GC_SystemCreateTimeUtc",
-                  "value": "04/18/2012 07:49:00"
-                },
-                {
-                  "columnName": "GC_SystemCreateUser",
-                  "value": "E  "
-                },
-                {
-                  "columnName": "GC_SystemLastEditTimeUtc",
-                  "value": "06/04/2025 08:31:00"
-                },
-                {
-                  "columnName": "GC_SystemLastEditUser",
-                  "value": "KJA"
-                }
-              ]
-            },
-            {
-              "__$operation": 4,
-              "data": [
-                {
-                  "columnName": "GC_PK",
-                  "value": "77d10bc2-7024-451b-aee5-3e085e7adb8d"
-                },
-                {
-                  "columnName": "GC_Code",
-                  "value": "DNK"
-                },
-                {
-                  "columnName": "GC_Name",
-                  "value": "Link Logistics A/S"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo",
-                  "value": "28659024"
-                },
-                {
-                  "columnName": "GC_BusinessRegNo2",
-                  "value": "28659024"
-                },
-                {
-                  "columnName": "GC_CustomsRegistrationNo",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_Address1",
-                  "value": "C.F. TIETGENS BOULEVARD 20"
-                },
-                {
-                  "columnName": "GC_Address2",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_City",
-                  "value": "ODENSE SOE"
-                },
-                {
-                  "columnName": "GC_Phone",
-                  "value": "\u002B4570104500"
-                },
-                {
-                  "columnName": "GC_PostCode",
-                  "value": "5220"
-                },
-                {
-                  "columnName": "GC_State",
-                  "value": "83"
-                },
-                {
-                  "columnName": "GC_Fax",
-                  "value": "\u002B4572253866"
-                },
-                {
-                  "columnName": "GC_WebAddress",
-                  "value": "www.linklog.com"
-                },
-                {
-                  "columnName": "GC_NoOfAccountingPeriods",
-                  "value": "12"
-                },
-                {
-                  "columnName": "GC_StartDate",
-                  "value": null
-                },
-                {
-                  "columnName": "GC_OH_OrgProxy",
-                  "value": "ef581617-0ff5-4556-96f2-574552e296cd"
-                },
-                {
-                  "columnName": "GC_RX_NKLocalCurrency",
-                  "value": "DKK"
-                },
-                {
-                  "columnName": "GC_RN_NKCountryCode",
-                  "value": "DK"
-                },
-                {
-                  "columnName": "GC_LocalDocLanguage",
-                  "value": "DEF"
-                },
-                {
-                  "columnName": "GC_IsActive",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsReciprocal",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTRegistered",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsGSTCashBasis",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTRegistered",
-                  "value": "False"
-                },
-                {
-                  "columnName": "GC_IsWHTCashBasis",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_IsValid",
-                  "value": "True"
-                },
-                {
-                  "columnName": "GC_Email",
-                  "value": "ode@linklog.com"
-                },
-                {
-                  "columnName": "GC_AddressMap",
-                  "value": ""
-                },
-                {
-                  "columnName": "GC_ValidationStatus",
-                  "value": "MAN"
-                },
-                {
-                  "columnName": "GC_SystemCreateTimeUtc",
-                  "value": "04/18/2012 07:49:00"
-                },
-                {
-                  "columnName": "GC_SystemCreateUser",
-                  "value": "E  "
-                },
-                {
-                  "columnName": "GC_SystemLastEditTimeUtc",
-                  "value": "06/04/2025 08:32:00"
-                },
-                {
-                  "columnName": "GC_SystemLastEditUser",
-                  "value": "KJA"
-                }
-              ]
-            }
-          ],
-          "columns": [
-            {
-              "name": "GC_PK",
-              "type": "uniqueidentifier"
-            },
-            {
-              "name": "GC_Code",
-              "type": "char"
-            },
-            {
-              "name": "GC_Name",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_BusinessRegNo",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_BusinessRegNo2",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_CustomsRegistrationNo",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_Address1",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_Address2",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_City",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_Phone",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_PostCode",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_State",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_Fax",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_WebAddress",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_NoOfAccountingPeriods",
-              "type": "int"
-            },
-            {
-              "name": "GC_StartDate",
-              "type": "smalldatetime"
-            },
-            {
-              "name": "GC_OH_OrgProxy",
-              "type": "uniqueidentifier"
-            },
-            {
-              "name": "GC_RX_NKLocalCurrency",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_RN_NKCountryCode",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_LocalDocLanguage",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_IsActive",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsReciprocal",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsGSTRegistered",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsGSTCashBasis",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsWHTRegistered",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsWHTCashBasis",
-              "type": "bit"
-            },
-            {
-              "name": "GC_IsValid",
-              "type": "bit"
-            },
-            {
-              "name": "GC_Email",
-              "type": "nvarchar"
-            },
-            {
-              "name": "GC_AddressMap",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_ValidationStatus",
-              "type": "char"
-            },
-            {
-              "name": "GC_SystemCreateTimeUtc",
-              "type": "smalldatetime"
-            },
-            {
-              "name": "GC_SystemCreateUser",
-              "type": "varchar"
-            },
-            {
-              "name": "GC_SystemLastEditTimeUtc",
-              "type": "smalldatetime"
-            },
-            {
-              "name": "GC_SystemLastEditUser",
-              "type": "varchar"
-            }
-          ]
-        }
-      ]
-    }
+    "currentItemCount": 8,
+    "itemsPerPage": 100,
+    "nextRequestParams": {
+      "after_lsn": "0x0000BF3100061F290005",
+      "after_seqval": "0xFFFFFFFFFFFFFFFFFFFF",
+      "after_command_id": 2147483647,
+      "after_operation": 4
+    },
+    "items": [
+      {
+        "tableDefinitionSchemaVersion": "8804.13",
+        "changes": [
+          {
+            "__$operation": 3,
+            "data": [
+              {
+                "columnName": "GC_PK",
+                "value": "c445c7c7-0c54-40d5-97fb-2827c5835a05"
+              },
+              {
+                "columnName": "GC_IsValid",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Code",
+                "value": "HRP"
+              },
+              {
+                "columnName": "GC_IsActive",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Name",
+                "value": "Global Ocean Forwarding ApS"
+              },
+              {
+                "columnName": "GC_BusinessRegNo",
+                "value": "DK38505866"
+              },
+              {
+                "columnName": "GC_BusinessRegNo2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_CustomsRegistrationNo",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Address1",
+                "value": "STRANDVEJEN 72"
+              },
+              {
+                "columnName": "GC_Address2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_City",
+                "value": "HELLERUP"
+              },
+              {
+                "columnName": "GC_Phone",
+                "value": "\u002B4577302222"
+              },
+              {
+                "columnName": "GC_PostCode",
+                "value": "2900"
+              },
+              {
+                "columnName": "GC_State",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Fax",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Email",
+                "value": ""
+              },
+              {
+                "columnName": "GC_WebAddress",
+                "value": "www.goforwardgroup.dk"
+              },
+              {
+                "columnName": "GC_IsGSTRegistered",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_IsGSTCashBasis",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTRegistered",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTCashBasis",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_NoOfAccountingPeriods",
+                "value": "12"
+              },
+              {
+                "columnName": "GC_StartDate",
+                "value": null
+              },
+              {
+                "columnName": "GC_RX_NKLocalCurrency",
+                "value": "DKK"
+              },
+              {
+                "columnName": "GC_RN_NKCountryCode",
+                "value": "DK"
+              },
+              {
+                "columnName": "GC_IsReciprocal",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_LocalDocLanguage",
+                "value": "DEF"
+              },
+              {
+                "columnName": "GC_OH_OrgProxy",
+                "value": "9491a704-a47e-488e-9052-5f3db854ef29"
+              },
+              {
+                "columnName": "GC_AddressMap",
+                "value": "SNA1[12-13]SA1[0-10]"
+              },
+              {
+                "columnName": "GC_ValidationStatus",
+                "value": "VAD"
+              },
+              {
+                "columnName": "GC_SystemCreateTimeUtc",
+                "value": "06/24/2022 11:03:00"
+              },
+              {
+                "columnName": "GC_SystemCreateUser",
+                "value": "E"
+              },
+              {
+                "columnName": "GC_SystemLastEditTimeUtc",
+                "value": "07/30/2024 11:06:00"
+              },
+              {
+                "columnName": "GC_SystemLastEditUser",
+                "value": "HES"
+              }
+            ]
+          },
+          {
+            "__$operation": 4,
+            "data": [
+              {
+                "columnName": "GC_PK",
+                "value": "c445c7c7-0c54-40d5-97fb-2827c5835a05"
+              },
+              {
+                "columnName": "GC_IsValid",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Code",
+                "value": "HRP"
+              },
+              {
+                "columnName": "GC_IsActive",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Name",
+                "value": "Global Ocean Forwarding ApS"
+              },
+              {
+                "columnName": "GC_BusinessRegNo",
+                "value": "DK38505866"
+              },
+              {
+                "columnName": "GC_BusinessRegNo2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_CustomsRegistrationNo",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Address1",
+                "value": "JAEGERSBORG ALLE 4"
+              },
+              {
+                "columnName": "GC_Address2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_City",
+                "value": "CHARLOTTENLUND"
+              },
+              {
+                "columnName": "GC_Phone",
+                "value": "\u002B4577302222"
+              },
+              {
+                "columnName": "GC_PostCode",
+                "value": "2920"
+              },
+              {
+                "columnName": "GC_State",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Fax",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Email",
+                "value": ""
+              },
+              {
+                "columnName": "GC_WebAddress",
+                "value": "www.goforwardgroup.dk"
+              },
+              {
+                "columnName": "GC_IsGSTRegistered",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_IsGSTCashBasis",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTRegistered",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTCashBasis",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_NoOfAccountingPeriods",
+                "value": "12"
+              },
+              {
+                "columnName": "GC_StartDate",
+                "value": null
+              },
+              {
+                "columnName": "GC_RX_NKLocalCurrency",
+                "value": "DKK"
+              },
+              {
+                "columnName": "GC_RN_NKCountryCode",
+                "value": "DK"
+              },
+              {
+                "columnName": "GC_IsReciprocal",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_LocalDocLanguage",
+                "value": "DEF"
+              },
+              {
+                "columnName": "GC_OH_OrgProxy",
+                "value": "9491a704-a47e-488e-9052-5f3db854ef29"
+              },
+              {
+                "columnName": "GC_AddressMap",
+                "value": "SNA1[17-17]SA1[0-15]"
+              },
+              {
+                "columnName": "GC_ValidationStatus",
+                "value": "VAD"
+              },
+              {
+                "columnName": "GC_SystemCreateTimeUtc",
+                "value": "06/24/2022 11:03:00"
+              },
+              {
+                "columnName": "GC_SystemCreateUser",
+                "value": "E"
+              },
+              {
+                "columnName": "GC_SystemLastEditTimeUtc",
+                "value": "11/13/2025 08:08:00"
+              },
+              {
+                "columnName": "GC_SystemLastEditUser",
+                "value": "MLU"
+              }
+            ]
+          },
+          {
+            "__$operation": 3,
+            "data": [
+              {
+                "columnName": "GC_PK",
+                "value": "c445c7c7-0c54-40d5-97fb-2827c5835a05"
+              },
+              {
+                "columnName": "GC_IsValid",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Code",
+                "value": "HRP"
+              },
+              {
+                "columnName": "GC_IsActive",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Name",
+                "value": "Global Ocean Forwarding ApS"
+              },
+              {
+                "columnName": "GC_BusinessRegNo",
+                "value": "DK38505866"
+              },
+              {
+                "columnName": "GC_BusinessRegNo2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_CustomsRegistrationNo",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Address1",
+                "value": "JAEGERSBORG ALLE 4"
+              },
+              {
+                "columnName": "GC_Address2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_City",
+                "value": "CHARLOTTENLUND"
+              },
+              {
+                "columnName": "GC_Phone",
+                "value": "\u002B4577302222"
+              },
+              {
+                "columnName": "GC_PostCode",
+                "value": "2920"
+              },
+              {
+                "columnName": "GC_State",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Fax",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Email",
+                "value": ""
+              },
+              {
+                "columnName": "GC_WebAddress",
+                "value": "www.goforwardgroup.dk"
+              },
+              {
+                "columnName": "GC_IsGSTRegistered",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_IsGSTCashBasis",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTRegistered",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTCashBasis",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_NoOfAccountingPeriods",
+                "value": "12"
+              },
+              {
+                "columnName": "GC_StartDate",
+                "value": null
+              },
+              {
+                "columnName": "GC_RX_NKLocalCurrency",
+                "value": "DKK"
+              },
+              {
+                "columnName": "GC_RN_NKCountryCode",
+                "value": "DK"
+              },
+              {
+                "columnName": "GC_IsReciprocal",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_LocalDocLanguage",
+                "value": "DEF"
+              },
+              {
+                "columnName": "GC_OH_OrgProxy",
+                "value": "9491a704-a47e-488e-9052-5f3db854ef29"
+              },
+              {
+                "columnName": "GC_AddressMap",
+                "value": "SNA1[17-17]SA1[0-15]"
+              },
+              {
+                "columnName": "GC_ValidationStatus",
+                "value": "VAD"
+              },
+              {
+                "columnName": "GC_SystemCreateTimeUtc",
+                "value": "06/24/2022 11:03:00"
+              },
+              {
+                "columnName": "GC_SystemCreateUser",
+                "value": "E"
+              },
+              {
+                "columnName": "GC_SystemLastEditTimeUtc",
+                "value": "11/13/2025 08:08:00"
+              },
+              {
+                "columnName": "GC_SystemLastEditUser",
+                "value": "MLU"
+              }
+            ]
+          },
+          {
+            "__$operation": 4,
+            "data": [
+              {
+                "columnName": "GC_PK",
+                "value": "c445c7c7-0c54-40d5-97fb-2827c5835a05"
+              },
+              {
+                "columnName": "GC_IsValid",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Code",
+                "value": "HRP"
+              },
+              {
+                "columnName": "GC_IsActive",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Name",
+                "value": "Global Ocean Forwarding ApS"
+              },
+              {
+                "columnName": "GC_BusinessRegNo",
+                "value": "DK38505866"
+              },
+              {
+                "columnName": "GC_BusinessRegNo2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_CustomsRegistrationNo",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Address1",
+                "value": "JAEGERSBORG ALLE 4"
+              },
+              {
+                "columnName": "GC_Address2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_City",
+                "value": "CHARLOTTENLUND"
+              },
+              {
+                "columnName": "GC_Phone",
+                "value": "\u002B4577302222"
+              },
+              {
+                "columnName": "GC_PostCode",
+                "value": "2920"
+              },
+              {
+                "columnName": "GC_State",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Fax",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Email",
+                "value": ""
+              },
+              {
+                "columnName": "GC_WebAddress",
+                "value": "www.goforwardgroup.dk"
+              },
+              {
+                "columnName": "GC_IsGSTRegistered",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_IsGSTCashBasis",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTRegistered",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTCashBasis",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_NoOfAccountingPeriods",
+                "value": "12"
+              },
+              {
+                "columnName": "GC_StartDate",
+                "value": null
+              },
+              {
+                "columnName": "GC_RX_NKLocalCurrency",
+                "value": "DKK"
+              },
+              {
+                "columnName": "GC_RN_NKCountryCode",
+                "value": "DK"
+              },
+              {
+                "columnName": "GC_IsReciprocal",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_LocalDocLanguage",
+                "value": "DEF"
+              },
+              {
+                "columnName": "GC_OH_OrgProxy",
+                "value": "9491a704-a47e-488e-9052-5f3db854ef29"
+              },
+              {
+                "columnName": "GC_AddressMap",
+                "value": "SNA1[17-17]SA1[0-15]"
+              },
+              {
+                "columnName": "GC_ValidationStatus",
+                "value": "VAD"
+              },
+              {
+                "columnName": "GC_SystemCreateTimeUtc",
+                "value": "06/24/2022 11:03:00"
+              },
+              {
+                "columnName": "GC_SystemCreateUser",
+                "value": "E"
+              },
+              {
+                "columnName": "GC_SystemLastEditTimeUtc",
+                "value": "11/13/2025 08:09:00"
+              },
+              {
+                "columnName": "GC_SystemLastEditUser",
+                "value": "MLU"
+              }
+            ]
+          },
+          {
+            "__$operation": 3,
+            "data": [
+              {
+                "columnName": "GC_PK",
+                "value": "357d7906-b44e-41d0-b968-9a8a8b6a66a8"
+              },
+              {
+                "columnName": "GC_IsValid",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Code",
+                "value": "GFA"
+              },
+              {
+                "columnName": "GC_IsActive",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Name",
+                "value": "GOFORWARD AIRSEA"
+              },
+              {
+                "columnName": "GC_BusinessRegNo",
+                "value": "DK43559656"
+              },
+              {
+                "columnName": "GC_BusinessRegNo2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_CustomsRegistrationNo",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Address1",
+                "value": "STRANDVEJEN 72"
+              },
+              {
+                "columnName": "GC_Address2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_City",
+                "value": "HELLERUP"
+              },
+              {
+                "columnName": "GC_Phone",
+                "value": "\u002B4577302222"
+              },
+              {
+                "columnName": "GC_PostCode",
+                "value": "2900"
+              },
+              {
+                "columnName": "GC_State",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Fax",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Email",
+                "value": ""
+              },
+              {
+                "columnName": "GC_WebAddress",
+                "value": ""
+              },
+              {
+                "columnName": "GC_IsGSTRegistered",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_IsGSTCashBasis",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTRegistered",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTCashBasis",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_NoOfAccountingPeriods",
+                "value": "12"
+              },
+              {
+                "columnName": "GC_StartDate",
+                "value": null
+              },
+              {
+                "columnName": "GC_RX_NKLocalCurrency",
+                "value": "DKK"
+              },
+              {
+                "columnName": "GC_RN_NKCountryCode",
+                "value": "DK"
+              },
+              {
+                "columnName": "GC_IsReciprocal",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_LocalDocLanguage",
+                "value": "DEF"
+              },
+              {
+                "columnName": "GC_OH_OrgProxy",
+                "value": "1ac47830-acb1-48b3-96e9-ad9ec443f55c"
+              },
+              {
+                "columnName": "GC_AddressMap",
+                "value": ""
+              },
+              {
+                "columnName": "GC_ValidationStatus",
+                "value": "MAN"
+              },
+              {
+                "columnName": "GC_SystemCreateTimeUtc",
+                "value": "10/04/2022 12:35:00"
+              },
+              {
+                "columnName": "GC_SystemCreateUser",
+                "value": "JOS"
+              },
+              {
+                "columnName": "GC_SystemLastEditTimeUtc",
+                "value": "10/31/2022 10:23:00"
+              },
+              {
+                "columnName": "GC_SystemLastEditUser",
+                "value": "STB"
+              }
+            ]
+          },
+          {
+            "__$operation": 4,
+            "data": [
+              {
+                "columnName": "GC_PK",
+                "value": "357d7906-b44e-41d0-b968-9a8a8b6a66a8"
+              },
+              {
+                "columnName": "GC_IsValid",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Code",
+                "value": "GFA"
+              },
+              {
+                "columnName": "GC_IsActive",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Name",
+                "value": "GOFORWARD AIRSEA"
+              },
+              {
+                "columnName": "GC_BusinessRegNo",
+                "value": "DK43559656"
+              },
+              {
+                "columnName": "GC_BusinessRegNo2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_CustomsRegistrationNo",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Address1",
+                "value": "JAEGERSBORG ALLE 4"
+              },
+              {
+                "columnName": "GC_Address2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_City",
+                "value": "CHARLOTTENLUND"
+              },
+              {
+                "columnName": "GC_Phone",
+                "value": "\u002B4577302222"
+              },
+              {
+                "columnName": "GC_PostCode",
+                "value": "2920"
+              },
+              {
+                "columnName": "GC_State",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Fax",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Email",
+                "value": ""
+              },
+              {
+                "columnName": "GC_WebAddress",
+                "value": ""
+              },
+              {
+                "columnName": "GC_IsGSTRegistered",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_IsGSTCashBasis",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTRegistered",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTCashBasis",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_NoOfAccountingPeriods",
+                "value": "12"
+              },
+              {
+                "columnName": "GC_StartDate",
+                "value": null
+              },
+              {
+                "columnName": "GC_RX_NKLocalCurrency",
+                "value": "DKK"
+              },
+              {
+                "columnName": "GC_RN_NKCountryCode",
+                "value": "DK"
+              },
+              {
+                "columnName": "GC_IsReciprocal",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_LocalDocLanguage",
+                "value": "DEF"
+              },
+              {
+                "columnName": "GC_OH_OrgProxy",
+                "value": "1ac47830-acb1-48b3-96e9-ad9ec443f55c"
+              },
+              {
+                "columnName": "GC_AddressMap",
+                "value": "SNA1[17-17]SA1[0-15]"
+              },
+              {
+                "columnName": "GC_ValidationStatus",
+                "value": "VAD"
+              },
+              {
+                "columnName": "GC_SystemCreateTimeUtc",
+                "value": "10/04/2022 12:35:00"
+              },
+              {
+                "columnName": "GC_SystemCreateUser",
+                "value": "JOS"
+              },
+              {
+                "columnName": "GC_SystemLastEditTimeUtc",
+                "value": "11/13/2025 08:10:00"
+              },
+              {
+                "columnName": "GC_SystemLastEditUser",
+                "value": "MLU"
+              }
+            ]
+          },
+          {
+            "__$operation": 3,
+            "data": [
+              {
+                "columnName": "GC_PK",
+                "value": "d08a422b-a433-4632-a0c5-5fc60d890b5d"
+              },
+              {
+                "columnName": "GC_IsValid",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Code",
+                "value": "LOG"
+              },
+              {
+                "columnName": "GC_IsActive",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Name",
+                "value": "Global Ocean Forwarding Logistics ApS"
+              },
+              {
+                "columnName": "GC_BusinessRegNo",
+                "value": "DK41076208"
+              },
+              {
+                "columnName": "GC_BusinessRegNo2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_CustomsRegistrationNo",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Address1",
+                "value": "RUNEVEJ 2"
+              },
+              {
+                "columnName": "GC_Address2",
+                "value": "SKJOLDHOEJ"
+              },
+              {
+                "columnName": "GC_City",
+                "value": "AARHUS"
+              },
+              {
+                "columnName": "GC_Phone",
+                "value": "\u002B4577302222"
+              },
+              {
+                "columnName": "GC_PostCode",
+                "value": "8210"
+              },
+              {
+                "columnName": "GC_State",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Fax",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Email",
+                "value": ""
+              },
+              {
+                "columnName": "GC_WebAddress",
+                "value": "www.goforwardgroup.dk"
+              },
+              {
+                "columnName": "GC_IsGSTRegistered",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_IsGSTCashBasis",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTRegistered",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTCashBasis",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_NoOfAccountingPeriods",
+                "value": "12"
+              },
+              {
+                "columnName": "GC_StartDate",
+                "value": null
+              },
+              {
+                "columnName": "GC_RX_NKLocalCurrency",
+                "value": "DKK"
+              },
+              {
+                "columnName": "GC_RN_NKCountryCode",
+                "value": "DK"
+              },
+              {
+                "columnName": "GC_IsReciprocal",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_LocalDocLanguage",
+                "value": "DEF"
+              },
+              {
+                "columnName": "GC_OH_OrgProxy",
+                "value": "0ec9a1ad-75ca-43b2-a931-af726a4b9b98"
+              },
+              {
+                "columnName": "GC_AddressMap",
+                "value": "SNA1[8-8]"
+              },
+              {
+                "columnName": "GC_ValidationStatus",
+                "value": "VAD"
+              },
+              {
+                "columnName": "GC_SystemCreateTimeUtc",
+                "value": "10/31/2022 10:21:00"
+              },
+              {
+                "columnName": "GC_SystemCreateUser",
+                "value": "HES"
+              },
+              {
+                "columnName": "GC_SystemLastEditTimeUtc",
+                "value": "07/30/2024 11:08:00"
+              },
+              {
+                "columnName": "GC_SystemLastEditUser",
+                "value": "HES"
+              }
+            ]
+          },
+          {
+            "__$operation": 4,
+            "data": [
+              {
+                "columnName": "GC_PK",
+                "value": "d08a422b-a433-4632-a0c5-5fc60d890b5d"
+              },
+              {
+                "columnName": "GC_IsValid",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Code",
+                "value": "LOG"
+              },
+              {
+                "columnName": "GC_IsActive",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_Name",
+                "value": "Global Ocean Forwarding Logistics ApS"
+              },
+              {
+                "columnName": "GC_BusinessRegNo",
+                "value": "DK41076208"
+              },
+              {
+                "columnName": "GC_BusinessRegNo2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_CustomsRegistrationNo",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Address1",
+                "value": "RUNEVEJ 2"
+              },
+              {
+                "columnName": "GC_Address2",
+                "value": ""
+              },
+              {
+                "columnName": "GC_City",
+                "value": "AARHUS"
+              },
+              {
+                "columnName": "GC_Phone",
+                "value": "\u002B4577302222"
+              },
+              {
+                "columnName": "GC_PostCode",
+                "value": "8210"
+              },
+              {
+                "columnName": "GC_State",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Fax",
+                "value": ""
+              },
+              {
+                "columnName": "GC_Email",
+                "value": ""
+              },
+              {
+                "columnName": "GC_WebAddress",
+                "value": "www.goforwardgroup.dk"
+              },
+              {
+                "columnName": "GC_IsGSTRegistered",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_IsGSTCashBasis",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTRegistered",
+                "value": "False"
+              },
+              {
+                "columnName": "GC_IsWHTCashBasis",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_NoOfAccountingPeriods",
+                "value": "12"
+              },
+              {
+                "columnName": "GC_StartDate",
+                "value": null
+              },
+              {
+                "columnName": "GC_RX_NKLocalCurrency",
+                "value": "DKK"
+              },
+              {
+                "columnName": "GC_RN_NKCountryCode",
+                "value": "DK"
+              },
+              {
+                "columnName": "GC_IsReciprocal",
+                "value": "True"
+              },
+              {
+                "columnName": "GC_LocalDocLanguage",
+                "value": "DEF"
+              },
+              {
+                "columnName": "GC_OH_OrgProxy",
+                "value": "0ec9a1ad-75ca-43b2-a931-af726a4b9b98"
+              },
+              {
+                "columnName": "GC_AddressMap",
+                "value": ""
+              },
+              {
+                "columnName": "GC_ValidationStatus",
+                "value": "NYV"
+              },
+              {
+                "columnName": "GC_SystemCreateTimeUtc",
+                "value": "10/31/2022 10:21:00"
+              },
+              {
+                "columnName": "GC_SystemCreateUser",
+                "value": "HES"
+              },
+              {
+                "columnName": "GC_SystemLastEditTimeUtc",
+                "value": "11/13/2025 08:11:00"
+              },
+              {
+                "columnName": "GC_SystemLastEditUser",
+                "value": "MLU"
+              }
+            ]
+          }
+        ],
+        "columns": [
+          {
+            "name": "GC_PK",
+            "type": "uniqueidentifier"
+          },
+          {
+            "name": "GC_IsValid",
+            "type": "bit"
+          },
+          {
+            "name": "GC_Code",
+            "type": "char"
+          },
+          {
+            "name": "GC_IsActive",
+            "type": "bit"
+          },
+          {
+            "name": "GC_Name",
+            "type": "nvarchar"
+          },
+          {
+            "name": "GC_BusinessRegNo",
+            "type": "nvarchar"
+          },
+          {
+            "name": "GC_BusinessRegNo2",
+            "type": "nvarchar"
+          },
+          {
+            "name": "GC_CustomsRegistrationNo",
+            "type": "nvarchar"
+          },
+          {
+            "name": "GC_Address1",
+            "type": "nvarchar"
+          },
+          {
+            "name": "GC_Address2",
+            "type": "nvarchar"
+          },
+          {
+            "name": "GC_City",
+            "type": "nvarchar"
+          },
+          {
+            "name": "GC_Phone",
+            "type": "varchar"
+          },
+          {
+            "name": "GC_PostCode",
+            "type": "varchar"
+          },
+          {
+            "name": "GC_State",
+            "type": "nvarchar"
+          },
+          {
+            "name": "GC_Fax",
+            "type": "varchar"
+          },
+          {
+            "name": "GC_Email",
+            "type": "nvarchar"
+          },
+          {
+            "name": "GC_WebAddress",
+            "type": "varchar"
+          },
+          {
+            "name": "GC_IsGSTRegistered",
+            "type": "bit"
+          },
+          {
+            "name": "GC_IsGSTCashBasis",
+            "type": "bit"
+          },
+          {
+            "name": "GC_IsWHTRegistered",
+            "type": "bit"
+          },
+          {
+            "name": "GC_IsWHTCashBasis",
+            "type": "bit"
+          },
+          {
+            "name": "GC_NoOfAccountingPeriods",
+            "type": "int"
+          },
+          {
+            "name": "GC_StartDate",
+            "type": "smalldatetime"
+          },
+          {
+            "name": "GC_RX_NKLocalCurrency",
+            "type": "varchar"
+          },
+          {
+            "name": "GC_RN_NKCountryCode",
+            "type": "varchar"
+          },
+          {
+            "name": "GC_IsReciprocal",
+            "type": "bit"
+          },
+          {
+            "name": "GC_LocalDocLanguage",
+            "type": "varchar"
+          },
+          {
+            "name": "GC_OH_OrgProxy",
+            "type": "uniqueidentifier"
+          },
+          {
+            "name": "GC_AddressMap",
+            "type": "varchar"
+          },
+          {
+            "name": "GC_ValidationStatus",
+            "type": "char"
+          },
+          {
+            "name": "GC_SystemCreateTimeUtc",
+            "type": "smalldatetime"
+          },
+          {
+            "name": "GC_SystemCreateUser",
+            "type": "varchar"
+          },
+          {
+            "name": "GC_SystemLastEditTimeUtc",
+            "type": "smalldatetime"
+          },
+          {
+            "name": "GC_SystemLastEditUser",
+            "type": "varchar"
+          }
+        ]
+      }
+    ]
   }
 }
