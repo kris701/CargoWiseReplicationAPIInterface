@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Title>CargoWiseReplicationAPIInterface Database</Title>
+	  <Title>CargoWiseReplicationAPIInterface.Database</Title>
 	  <Authors>Kristian Skov Johansen</Authors>
 	  <Description>An interface to work with CargoWises new Replication API</Description>
 	  <RepositoryUrl>https://github.com/kris701/CargoWiseReplicationAPIInterface</RepositoryUrl>
