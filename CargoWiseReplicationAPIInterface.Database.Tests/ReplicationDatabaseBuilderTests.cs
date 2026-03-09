@@ -9,21 +9,21 @@ namespace CargoWiseReplicationAPIInterface.Database.Tests
 		public static IEnumerable<object[]> InputData()
 		{
 			yield return new object[] {
-				new List<BaseReturnData>(){ new GlbGroup() },
+				new List<Type>(){ typeof(GlbGroup) },
 				"TestFiles/expected1.sql"
 			};
 			yield return new object[] {
-				new List<BaseReturnData>(){ new GlbGroup(), new GlbCompany(), new GenCustomAddOnValue() },
+				new List<Type>(){ typeof(GlbGroup), typeof(GlbCompany), typeof(GenCustomAddOnValue) },
 				"TestFiles/expected2.sql"
 			};
 		}
 
 		[TestMethod]
 		[DynamicData(nameof(InputData))]
-		public void Can_Build(List<BaseReturnData> tables, string expectedFile)
+		public void Can_Build(List<Type> tables, string expectedFile)
 		{
 			// ARRANGE
-			var builder = new ReplicationDatabaseBuilder("", "CWO");
+			var builder = new ReplicationDatabaseBuilder("CWO");
 			var expectedText = File.ReadAllText(expectedFile);
 
 			// ACT
