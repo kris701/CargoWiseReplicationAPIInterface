@@ -245,6 +245,8 @@ namespace CargoWiseReplicationAPIInterface.Database
 					return "INT";
 				case "DATETIME":
 					return "DATETIME";
+				case "BYTE[]":
+					return "VARBINARY(MAX)";
 				case "DOUBLE":
 				case "FLOAT":
 					return "DECIMAL(9,3)";
