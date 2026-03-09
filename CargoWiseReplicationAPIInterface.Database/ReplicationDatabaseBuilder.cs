@@ -1,7 +1,5 @@
 ﻿using CargoWiseReplicationAPIInterface.Database.Attributes;
 using CargoWiseReplicationAPIInterface.Models;
-using System;
-using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
@@ -99,7 +97,7 @@ namespace CargoWiseReplicationAPIInterface.Database
 
 				var isPrimaryKey = prop.GetCustomAttribute<ReplicationPrimaryKey>() != null;
 				var isNotNull = false;
-				if (prop.GetCustomAttribute<ReplicationNotNull>() != null || isPrimaryKey) 
+				if (prop.GetCustomAttribute<ReplicationNotNull>() != null || isPrimaryKey)
 					isNotNull = true;
 
 				subSb.Append($"\t\t[{prop.Name}] {TypeToDBType(prop.PropertyType, prop.GetCustomAttribute<ReplicationTypeOverride>())}");

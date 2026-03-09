@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CargoWiseReplicationAPIInterface.Database.Attributes
+﻿namespace CargoWiseReplicationAPIInterface.Database.Attributes
 {
 	public class ReplicationUpdateValueOverride : Attribute
 	{
