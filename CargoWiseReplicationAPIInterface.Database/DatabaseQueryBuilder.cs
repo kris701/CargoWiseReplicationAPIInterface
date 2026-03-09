@@ -8,7 +8,7 @@ namespace CargoWiseReplicationAPIInterface.Database
 	/// <summary>
 	/// An interface that can be used to build a SQL query for a replication database
 	/// </summary>
-	public class ReplicationDatabaseBuilder : IReplicationDatabaseBuilder
+	public class DatabaseQueryBuilder : IDatabaseQueryBuilder
 	{
 		/// <summary>
 		/// The schema to put all the tables, stps and types in
@@ -19,7 +19,7 @@ namespace CargoWiseReplicationAPIInterface.Database
 		/// Main constructor
 		/// </summary>
 		/// <param name="schema"></param>
-		public ReplicationDatabaseBuilder(string schema)
+		public DatabaseQueryBuilder(string schema)
 		{
 			Schema = schema;
 		}

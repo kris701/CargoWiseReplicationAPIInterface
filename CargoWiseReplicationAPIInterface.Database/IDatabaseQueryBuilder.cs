@@ -5,7 +5,7 @@ namespace CargoWiseReplicationAPIInterface.Database
 	/// <summary>
 	/// An interface that can be used to build a SQL query for a replication database
 	/// </summary>
-	public interface IReplicationDatabaseBuilder
+	public interface IDatabaseQueryBuilder
 	{
 		/// <summary>
 		/// The schema to put all the tables, stps and types in

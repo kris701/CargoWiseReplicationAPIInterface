@@ -23,7 +23,7 @@ namespace CargoWiseReplicationAPIInterface.Database.Tests
 		public void Can_Build(List<Type> tables, string expectedFile)
 		{
 			// ARRANGE
-			var builder = new ReplicationDatabaseBuilder("CWO");
+			var builder = new DatabaseQueryBuilder("CWO");
 			var expectedText = File.ReadAllText(expectedFile);
 
 			// ACT
