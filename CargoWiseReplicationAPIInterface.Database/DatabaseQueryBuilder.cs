@@ -249,7 +249,7 @@ namespace CargoWiseReplicationAPIInterface.Database
 					return "VARBINARY(MAX)";
 				case "DOUBLE":
 				case "FLOAT":
-					return "DECIMAL(9,3)";
+					return "DECIMAL(19,4)";
 				case "BOOLEAN":
 					return "BIT";
 			}

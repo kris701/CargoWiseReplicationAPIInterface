@@ -29,6 +29,8 @@ namespace CargoWiseReplicationAPIInterface.Database.Tests
 			// ACT
 			var actualText = builder.Build(tables);
 
+			File.WriteAllText(expectedFile, actualText);
+
 			// ASSERT
 			Assert.AreEqual(expectedText, actualText);
 		}

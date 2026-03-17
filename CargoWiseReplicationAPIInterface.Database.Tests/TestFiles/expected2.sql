@@ -185,8 +185,8 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name = 'GlbCompany' AND xtype='U')
 		[GC_StartDate] DATETIME NULL,
 		[GC_OH_OrgProxy] UNIQUEIDENTIFIER NULL,
 		[GC_RX_NKLocalCurrency] NVARCHAR(MAX) NULL,
-		[GC_RN_NKCountryCode] DECIMAL(9,3) NULL,
-		[GC_LocalDocLanguage] DECIMAL(9,3) NULL,
+		[GC_RN_NKCountryCode] DECIMAL(19,4) NULL,
+		[GC_LocalDocLanguage] DECIMAL(19,4) NULL,
 		[GC_IsActive] BIT NULL,
 		[GC_IsReciprocal] BIT NULL,
 		[GC_IsGSTRegistered] BIT NULL,
@@ -223,8 +223,8 @@ CREATE TYPE [CWO].[GlbCompany_TVP] AS TABLE (
 	[GC_StartDate] DATETIME NULL,
 	[GC_OH_OrgProxy] UNIQUEIDENTIFIER NULL,
 	[GC_RX_NKLocalCurrency] NVARCHAR(MAX) NULL,
-	[GC_RN_NKCountryCode] DECIMAL(9,3) NULL,
-	[GC_LocalDocLanguage] DECIMAL(9,3) NULL,
+	[GC_RN_NKCountryCode] DECIMAL(19,4) NULL,
+	[GC_LocalDocLanguage] DECIMAL(19,4) NULL,
 	[GC_IsActive] BIT NULL,
 	[GC_IsReciprocal] BIT NULL,
 	[GC_IsGSTRegistered] BIT NULL,
@@ -391,7 +391,7 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name = 'GenCustomAddOnValue' AND x
 		[XV_SystemLastEditTimeUtc] DATETIME NULL,
 		[XV_SystemLastEditUser] NVARCHAR(MAX) NULL,
 		[XV_Name] NVARCHAR(MAX) NULL,
-		[XV_DataAsDecimal] DECIMAL(9,3) NULL,
+		[XV_DataAsDecimal] DECIMAL(19,4) NULL,
 		[XV_UploadType] NVARCHAR(3) NOT NULL
 	)
 GO
@@ -410,7 +410,7 @@ CREATE TYPE [CWO].[GenCustomAddOnValue_TVP] AS TABLE (
 	[XV_SystemLastEditTimeUtc] DATETIME NULL,
 	[XV_SystemLastEditUser] NVARCHAR(MAX) NULL,
 	[XV_Name] NVARCHAR(MAX) NULL,
-	[XV_DataAsDecimal] DECIMAL(9,3) NULL,
+	[XV_DataAsDecimal] DECIMAL(19,4) NULL,
 	[OpCode] INT NOT NULL
 )
 GO
