@@ -1,4 +1,5 @@
-﻿using CargoWiseReplicationAPIInterface.Exceptions;
+﻿using CargoWiseReplicationAPIInterface.Converters;
+using CargoWiseReplicationAPIInterface.Exceptions;
 using CargoWiseReplicationAPIInterface.Models;
 using CargoWiseReplicationAPIInterface.Models.Changes;
 using CargoWiseReplicationAPIInterface.Models.Summary;
@@ -19,7 +20,8 @@ namespace CargoWiseReplicationAPIInterface
 		private readonly IReplicationAPIService _api;
 		private readonly JsonSerializerOptions _options = new JsonSerializerOptions()
 		{
-			AllowTrailingCommas = true
+			AllowTrailingCommas = true,
+			Converters = { new ByteArrayConverter() }
 		};
 
 		/// <summary>
@@ -185,6 +187,9 @@ namespace CargoWiseReplicationAPIInterface
 						return "null";
 					var parsed = DateTime.ParseExact(strValue2, "MM/dd/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
 					return $"\"{parsed.ToString("O")}\"";
+				case "VARBINARY":
+					var bytes = Encoding.ASCII.GetBytes($"{value}");
+					return $"[{string.Join(',', bytes)}]";
 				default:
 					var strValue3 = value.ToString();
 					if (strValue3 == null)
