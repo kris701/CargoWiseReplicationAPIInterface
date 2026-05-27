@@ -36,6 +36,7 @@ namespace CargoWiseReplicationAPIInterface.Services
 				Password
 				))))));
 			_client.TimeOut = TimeSpan.FromMinutes(10);
+			_client.AutoAddCookies = true;
 		}
 
 		public async Task<SummaryResponse> GetSummary(string afterLsn)
