@@ -15,7 +15,7 @@
 
 	<PropertyGroup>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-		<Version>26.2.25.1</Version>
+		<Version>26.2.25.2</Version>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -41,7 +41,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SerializableHttps" Version="1.2.4" />
+    <PackageReference Include="SerializableHttps" Version="1.2.5" />
   </ItemGroup>
 
 </Project>
