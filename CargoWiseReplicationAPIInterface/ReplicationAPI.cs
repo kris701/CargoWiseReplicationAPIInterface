@@ -137,7 +137,8 @@ namespace CargoWiseReplicationAPIInterface
 							returnList.Add(newItem);
 						}
 					}
-					catch(Exception ex) {
+					catch (Exception ex)
+					{
 						throw new ParsingException(ex.Message, asJson, ex);
 					}
 				}

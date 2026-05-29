@@ -1,5 +1,4 @@
 ﻿using CargoWiseReplicationAPIInterface.Database.Tests.Models;
-using CargoWiseReplicationAPIInterface.Models;
 
 namespace CargoWiseReplicationAPIInterface.Database.Tests
 {

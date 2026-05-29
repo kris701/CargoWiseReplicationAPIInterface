@@ -1,7 +1,4 @@
 ﻿using CargoWiseReplicationAPIInterface.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CargoWiseReplicationAPIInterface.Tests.Models
 {

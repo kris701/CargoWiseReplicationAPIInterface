@@ -36,13 +36,13 @@ namespace CargoWiseReplicationAPIInterface.Services
 				Password
 				))))));
 			_client.TimeOut = TimeSpan.FromMinutes(10);
-			_client.AutoAddCookies = true;
 
-			_client.Headers.Add("Host", "svc-pa8mia.wisegrid.net");
-			_client.Headers.Add("User-Agent", "ReplicationAPIService/26.2.25.4");
-			_client.Headers.Add("Accept", "*/*");
-			_client.Headers.Add("Accept-Encoding", "gzip, deflate, br");
-			_client.Headers.Add("Connection","keep-alive");
+			_client.AddHeader("User-Agent", "ReplicationAPIService/26.2.25.6");
+			_client.AddHeader("Accept", "*/*");
+			_client.AddHeader("Accept-Encoding", "gzip, deflate, br");
+			_client.AddHeader("Connection", "keep-alive");
+			_client.AddHeader("Cache-Control", "no-cache");
+			_client.AddHeader("Pragma", "no-cache");
 		}
 
 		public ReplicationAPIHTTPService(string uRL, string username, string password, SerializableHttpsClient client)
@@ -109,7 +109,7 @@ namespace CargoWiseReplicationAPIInterface.Services
 		}
 
 		private string ReplaceInvalidCharacters(string text)
-		{	
+		{
 			text = text.Replace("\u001e", "");
 			text = text.Replace("\\u001e", "");
 			return text;

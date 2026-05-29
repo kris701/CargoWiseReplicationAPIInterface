@@ -1,11 +1,8 @@
-﻿using CargoWiseReplicationAPIInterface.Models;
-using CargoWiseReplicationAPIInterface.Models.Changes;
+﻿using CargoWiseReplicationAPIInterface.Models.Changes;
 using CargoWiseReplicationAPIInterface.Models.Summary;
 using CargoWiseReplicationAPIInterface.Tests.Mocks;
 using CargoWiseReplicationAPIInterface.Tests.Models;
-using System.Text.Encodings.Web;
 using System.Text.Json;
-using System.Text.Unicode;
 
 namespace CargoWiseReplicationAPIInterface.Tests
 {
@@ -42,7 +39,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 			var mockApi = new MockReplicationAPIService();
 			var repicationInterface = new ReplicationAPI(mockApi);
 			var fileText = File.ReadAllText(inputFile);
-			fileText = fileText.Replace("\u001e","");
+			fileText = fileText.Replace("\u001e", "");
 			var changes = JsonSerializer.Deserialize<ChangesModel>(fileText);
 			Assert.IsNotNull(changes);
 			mockApi.ChangesToReturn = changes.Changes;
