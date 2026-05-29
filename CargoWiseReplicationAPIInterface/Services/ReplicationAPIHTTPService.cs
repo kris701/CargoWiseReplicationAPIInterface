@@ -37,6 +37,12 @@ namespace CargoWiseReplicationAPIInterface.Services
 				))))));
 			_client.TimeOut = TimeSpan.FromMinutes(10);
 			_client.AutoAddCookies = true;
+
+			_client.Headers.Add("Host", "svc-pa8mia.wisegrid.net");
+			_client.Headers.Add("User-Agent","HelvWare-API");
+			_client.Headers.Add("Accept", "*/*");
+			_client.Headers.Add("Accept-Encoding", "gzip, deflate, br");
+			_client.Headers.Add("Connection","keep-alive");
 		}
 
 		public async Task<SummaryResponse> GetSummary(string afterLsn)
