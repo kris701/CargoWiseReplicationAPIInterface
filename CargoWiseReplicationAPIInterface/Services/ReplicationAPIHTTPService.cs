@@ -39,8 +39,7 @@ namespace CargoWiseReplicationAPIInterface.Services
 			_client.AutoAddCookies = true;
 
 			_client.Headers.Add("Host", "svc-pa8mia.wisegrid.net");
-			_client.Headers.Add("Postman-Token",Guid.NewGuid().ToString());
-			_client.Headers.Add("User-Agent", "PostmanRuntime/7.5.4.0");
+			_client.Headers.Add("User-Agent", "ReplicationAPIService/26.2.25.4");
 			_client.Headers.Add("Accept", "*/*");
 			_client.Headers.Add("Accept-Encoding", "gzip, deflate, br");
 			_client.Headers.Add("Connection","keep-alive");
