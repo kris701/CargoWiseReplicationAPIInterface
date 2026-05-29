@@ -39,10 +39,19 @@ namespace CargoWiseReplicationAPIInterface.Services
 			_client.AutoAddCookies = true;
 
 			_client.Headers.Add("Host", "svc-pa8mia.wisegrid.net");
-			_client.Headers.Add("User-Agent","HelvWare-API");
+			_client.Headers.Add("Postman-Token",Guid.NewGuid().ToString());
+			_client.Headers.Add("User-Agent", "PostmanRuntime/7.5.4.0");
 			_client.Headers.Add("Accept", "*/*");
 			_client.Headers.Add("Accept-Encoding", "gzip, deflate, br");
 			_client.Headers.Add("Connection","keep-alive");
+		}
+
+		public ReplicationAPIHTTPService(string uRL, string username, string password, SerializableHttpsClient client)
+		{
+			URL = uRL;
+			Username = username;
+			Password = password;
+			_client = client;
 		}
 
 		public async Task<SummaryResponse> GetSummary(string afterLsn)
