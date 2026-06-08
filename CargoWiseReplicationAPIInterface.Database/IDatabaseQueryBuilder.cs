@@ -23,5 +23,11 @@ namespace CargoWiseReplicationAPIInterface.Database
 		/// <param name="tables"></param>
 		/// <returns></returns>
 		public string Build(List<Type> tables);
+
+		/// <summary>
+		/// Builds a table and STPs for fetching and saving LSN values for tables
+		/// </summary>
+		/// <returns></returns>
+		public string BuildLSNSystem();
 	}
 }

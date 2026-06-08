@@ -1,0 +1,29 @@
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'CWO')
+	EXEC('CREATE SCHEMA [CWO]')
+GO
+
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name = 'LastLSN' AND xtype='U')
+	CREATE TABLE [CWO].[LastLSN] (
+		[LastLSN] [nvarchar](max) NOT NULL,
+		[TableCode] [nvarchar](max) NOT NULL,
+		[UpdatedAt] [datetime] NOT NULL
+	)
+GO
+DROP PROCEDURE IF EXISTS [CWO].[GetLastLSN]
+GO
+CREATE PROCEDURE [CWO].[GetLastLSN]
+AS
+BEGIN
+	SELECT * FROM [CWO].[LastLSN]
+END
+GO
+DROP PROCEDURE IF EXISTS [CWO].[SetLastLSN]
+GO
+CREATE PROCEDURE [CWO].[SetLastLSN]
+@LastLSN NVARCHAR (MAX), @TableCode NVARCHAR (MAX), @UpdatedAt DATETIME
+AS
+BEGIN TRANSACTION
+	DELETE [CWR].[LastLSN] WHERE  TableCode = @TableCode;
+	INSERT  INTO [CWR].[LastLSN] VALUES (@LastLSN, @TableCode, @UpdatedAt);
+COMMIT TRANSACTION;
+GO

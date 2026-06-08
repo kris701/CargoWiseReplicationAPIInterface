@@ -54,8 +54,51 @@ namespace CargoWiseReplicationAPIInterface.Database
 				sb.AppendLine(BuildTVPSQL(table));
 				sb.AppendLine(BuildMergeSQL(table));
 			}
-			var query = sb.ToString();
-			return query;
+			return sb.ToString();
+		}
+
+		/// <summary>
+		/// Builds a table and STPs for fetching and saving LSN values for tables
+		/// </summary>
+		/// <returns></returns>
+		public string BuildLSNSystem()
+		{
+			var sb = new StringBuilder();
+			sb.AppendLine(BuildSchemaSQL());
+			
+			sb.AppendLine($"IF NOT EXISTS (SELECT * FROM sysobjects WHERE name = 'LastLSN' AND xtype='U')");
+			sb.AppendLine($"\tCREATE TABLE [{Schema}].[LastLSN] (");
+			sb.AppendLine($"\t\t[LastLSN] [nvarchar](max) NOT NULL,");
+			sb.AppendLine($"\t\t[TableCode] [nvarchar](max) NOT NULL,");
+			sb.AppendLine($"\t\t[UpdatedAt] [datetime] NOT NULL");
+			sb.AppendLine($"\t)");
+			sb.AppendLine($"GO");
+
+
+			sb.AppendLine($"DROP PROCEDURE IF EXISTS [{Schema}].[GetLastLSN]");
+			sb.AppendLine($"GO");
+
+			sb.AppendLine($"CREATE PROCEDURE [{Schema}].[GetLastLSN]");
+			sb.AppendLine($"AS");
+			sb.AppendLine($"BEGIN");
+			sb.AppendLine($"\tSELECT * FROM [{Schema}].[LastLSN]");
+			sb.AppendLine("END");
+			sb.AppendLine("GO");
+
+
+			sb.AppendLine($"DROP PROCEDURE IF EXISTS [{Schema}].[SetLastLSN]");
+			sb.AppendLine($"GO");
+
+			sb.AppendLine($"CREATE PROCEDURE [{Schema}].[SetLastLSN]");
+			sb.AppendLine($"@LastLSN NVARCHAR (MAX), @TableCode NVARCHAR (MAX), @UpdatedAt DATETIME");
+			sb.AppendLine($"AS");
+			sb.AppendLine($"BEGIN TRANSACTION");
+			sb.AppendLine($"\tDELETE [CWR].[LastLSN] WHERE  TableCode = @TableCode;");
+			sb.AppendLine($"\tINSERT  INTO [CWR].[LastLSN] VALUES (@LastLSN, @TableCode, @UpdatedAt);");
+			sb.AppendLine("COMMIT TRANSACTION;");
+			sb.AppendLine("GO");
+
+			return sb.ToString();
 		}
 
 		private string BuildSchemaSQL()

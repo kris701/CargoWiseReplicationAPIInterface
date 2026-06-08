@@ -28,7 +28,20 @@ namespace CargoWiseReplicationAPIInterface.Database.Tests
 			// ACT
 			var actualText = builder.Build(tables);
 
-			File.WriteAllText(expectedFile, actualText);
+			// ASSERT
+			Assert.AreEqual(expectedText, actualText);
+		}
+
+		[TestMethod]
+		[DataRow("TestFiles/expected3.sql")]
+		public void Can_BuildLSNSystem(string expectedFile)
+		{
+			// ARRANGE
+			var builder = new DatabaseQueryBuilder("CWO");
+			var expectedText = File.ReadAllText(expectedFile);
+
+			// ACT
+			var actualText = builder.BuildLSNSystem();
 
 			// ASSERT
 			Assert.AreEqual(expectedText, actualText);
