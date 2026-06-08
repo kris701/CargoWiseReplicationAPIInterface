@@ -91,7 +91,7 @@ namespace CargoWiseReplicationAPIInterface.Database.Services
 
 			while (data.Count > 0 && !cancellationToken.IsCancellationRequested)
 			{
-				while (retryCount < RetryTimes)
+				while (retryCount < RetryTimes && !cancellationToken.IsCancellationRequested)
 				{
 					try
 					{
