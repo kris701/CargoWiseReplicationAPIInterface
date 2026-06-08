@@ -7,6 +7,7 @@
   </Folder>
   <Project Path="CargoWiseReplicationAPIInterface.Database.Tests/CargoWiseReplicationAPIInterface.Database.Tests.csproj" Id="8a4e2443-159e-42fa-b2fe-f8f860181b7f" />
   <Project Path="CargoWiseReplicationAPIInterface.Database/CargoWiseReplicationAPIInterface.Database.csproj" Id="97651409-7c74-40e6-bf31-69b3d7f4a352" />
+  <Project Path="CargoWiseReplicationAPIInterface.Serialization/CargoWiseReplicationAPIInterface.Serialization.csproj" Id="36b9de9b-9bd9-45f3-8627-a5cd427dd63f" />
   <Project Path="CargoWiseReplicationAPIInterface.Tests/CargoWiseReplicationAPIInterface.Tests.csproj" />
   <Project Path="CargoWiseReplicationAPIInterface/CargoWiseReplicationAPIInterface.csproj" />
 </Solution>
