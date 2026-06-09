@@ -35,7 +35,7 @@ namespace CargoWiseReplicationAPIInterface.Services
 				Username,
 				Password
 				))))));
-			_client.TimeOut = TimeSpan.FromMinutes(10);
+			_client.TimeOut = TimeSpan.FromMinutes(60);
 
 			_client.AddHeader("User-Agent", "ReplicationAPIService/26.2.25.6");
 			_client.AddHeader("Accept", "*/*");

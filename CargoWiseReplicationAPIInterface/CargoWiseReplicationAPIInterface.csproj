@@ -15,7 +15,7 @@
 
 	<PropertyGroup>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-		<Version>26.2.25.7</Version>
+		<Version>26.2.25.8</Version>
 	</PropertyGroup>
 
 	<PropertyGroup>
