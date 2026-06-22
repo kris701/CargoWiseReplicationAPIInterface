@@ -2,6 +2,8 @@
 using CargoWiseReplicationAPIInterface.Models.Summary;
 using SerializableHttps;
 using SerializableHttps.AuthenticationMethods;
+using SerializableHttps.Exceptions;
+using System.Diagnostics.CodeAnalysis;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
@@ -19,7 +21,7 @@ namespace CargoWiseReplicationAPIInterface.Services
 		public string Password { get; set; }
 		public int PageSize { get; set; } = 1000;
 
-		private readonly SerializableHttpsClient _client;
+		private SerializableHttpsClient _client;
 
 		public ReplicationAPIHTTPService(string uRL, string username, string password)
 		{
@@ -27,6 +29,12 @@ namespace CargoWiseReplicationAPIInterface.Services
 			Username = username;
 			Password = password;
 
+			CreateClient();
+		}
+
+		[MemberNotNull(nameof(_client))]
+		private void CreateClient()
+		{
 			_client = new SerializableHttpsClient();
 			_client.SetAuthentication(new ManualAuthenticationMethod(
 				new AuthenticationHeaderValue(
@@ -55,47 +63,35 @@ namespace CargoWiseReplicationAPIInterface.Services
 
 		public async Task<SummaryResponse> GetSummary(string afterLsn)
 		{
-			return await _client.GetAsync<SummaryRequest, SummaryResponse>(
-				new SummaryRequest()
-				{
-					AfterLSN = afterLsn
-				},
-				URL + "/change-summary"
-			);
+			try
+			{
+				var response = await _client.GetAsync<SummaryRequest, SummaryResponse>(
+					new SummaryRequest()
+					{
+						AfterLSN = afterLsn
+					},
+					URL + "/change-summary"
+				);
+				if (response == null)
+					throw new Exception("Invalid response from the replication API!");
+				return response;
+			}
+			catch(Exception ex)
+			{
+				CreateClient();
+				throw ex;
+			}
 		}
 
 		public async Task<ChangesResponse> GetChanges(string afterLsn, string maxLsn, string schemaName, string tableName)
 		{
-			var detailsResponse = await _client.GetAsync<ChangesRequest, string>(
-				new ChangesRequest()
-				{
-					AfterLSN = afterLsn,
-					MaxLSN = maxLsn,
-					SchemaName = schemaName,
-					TableName = tableName,
-					PageSize = PageSize
-				},
-				URL + "/change-detail"
-			);
-			detailsResponse = ReplaceInvalidCharacters(detailsResponse);
-			var response = JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
-			if (response == null)
-				throw new Exception("Invalid response!");
-			return response;
-		}
-
-		public async Task<ChangesResponse?> GetChangesFromLast(ChangesResponse last, string maxLsn, string schemaName, string tableName)
-		{
-			if (last.Data.CurrentItemCount == last.Data.ItemsPerPage)
+			try
 			{
 				var detailsResponse = await _client.GetAsync<ChangesRequest, string>(
 					new ChangesRequest()
 					{
-						AfterLSN = last.Data.NextRequestParams.AfterLSN,
+						AfterLSN = afterLsn,
 						MaxLSN = maxLsn,
-						AfterSeqVal = last.Data.NextRequestParams.AfterSeqVal,
-						AfterCommandId = last.Data.NextRequestParams.AfterCommandId,
-						AfterOperation = last.Data.NextRequestParams.AfterOperation,
 						SchemaName = schemaName,
 						TableName = tableName,
 						PageSize = PageSize
@@ -103,7 +99,46 @@ namespace CargoWiseReplicationAPIInterface.Services
 					URL + "/change-detail"
 				);
 				detailsResponse = ReplaceInvalidCharacters(detailsResponse);
-				return JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
+				var response = JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
+				if (response == null)
+					throw new Exception("Invalid response!");
+				return response;
+			}
+			catch (Exception ex)
+			{
+				CreateClient();
+				throw ex;
+			}
+		}
+
+		public async Task<ChangesResponse?> GetChangesFromLast(ChangesResponse last, string maxLsn, string schemaName, string tableName)
+		{
+			if (last.Data.CurrentItemCount == last.Data.ItemsPerPage)
+			{
+				try
+				{
+					var detailsResponse = await _client.GetAsync<ChangesRequest, string>(
+						new ChangesRequest()
+						{
+							AfterLSN = last.Data.NextRequestParams.AfterLSN,
+							MaxLSN = maxLsn,
+							AfterSeqVal = last.Data.NextRequestParams.AfterSeqVal,
+							AfterCommandId = last.Data.NextRequestParams.AfterCommandId,
+							AfterOperation = last.Data.NextRequestParams.AfterOperation,
+							SchemaName = schemaName,
+							TableName = tableName,
+							PageSize = PageSize
+						},
+						URL + "/change-detail"
+					);
+					detailsResponse = ReplaceInvalidCharacters(detailsResponse);
+					return JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
+				}
+				catch (Exception ex)
+				{
+					CreateClient();
+					throw ex;
+				}
 			}
 			return null;
 		}
