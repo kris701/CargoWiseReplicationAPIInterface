@@ -2,7 +2,7 @@
 using CsvHelper.Configuration;
 using CsvHelper.TypeConversion;
 
-namespace Helvion.Helvware.Plugins.TrendhimIntegration.Converters.Serialization
+namespace CargoWiseReplicationAPIInterface.Serialization
 {
 	/// <summary>
 	/// A type converter to convert the OA datetime format to a <seealso cref="DateTime"/>
