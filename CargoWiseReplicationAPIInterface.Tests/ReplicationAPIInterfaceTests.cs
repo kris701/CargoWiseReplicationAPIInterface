@@ -129,5 +129,22 @@ namespace CargoWiseReplicationAPIInterface.Tests
 			var actualText = JsonSerializer.Serialize(actualObject);
 			Assert.AreEqual(expectedText, actualText);
 		}
+
+		//[TestMethod]
+		//public async Task Can_GetDetails_Full()
+		//{
+		//	// ARRANGE
+		//	var url = "";
+		//	var username = "";
+		//	var password = "";
+		//	var api = new ReplicationAPI(url, username, password);
+
+		//	// ACT
+		//	var actual = await api.GetDetails<GlbGroup>("0x00000000000000000000", "0xFFFFFFFFFFFFFFFFFFFF", "dbo", "GlbGroup");
+
+		//	// ASSERT
+		//	Assert.IsNotNull(actual);
+		//	Assert.IsTrue(actual.Count > 0);
+		//}
 	}
 }

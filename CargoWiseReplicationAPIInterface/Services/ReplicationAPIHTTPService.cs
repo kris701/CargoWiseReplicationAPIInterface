@@ -115,18 +115,18 @@ namespace CargoWiseReplicationAPIInterface.Services
 
 		public async Task<ChangesData?> GetChangesFromLast(ChangesData last, string maxLsn, string schemaName, string tableName)
 		{
-			if (last.Data.CurrentItemCount == last.Data.ItemsPerPage)
+			if (last.CurrentItemCount == last.ItemsPerPage)
 			{
 				try
 				{
 					var detailsResponse = await _client.GetAsync<ChangesRequest, string>(
 						new ChangesRequest()
 						{
-							AfterLSN = last.Data.NextRequestParams.AfterLSN,
+							AfterLSN = last.NextRequestParams.AfterLSN,
 							MaxLSN = maxLsn,
-							AfterSeqVal = last.Data.NextRequestParams.AfterSeqVal,
-							AfterCommandId = last.Data.NextRequestParams.AfterCommandId,
-							AfterOperation = last.Data.NextRequestParams.AfterOperation,
+							AfterSeqVal = last.NextRequestParams.AfterSeqVal,
+							AfterCommandId = last.NextRequestParams.AfterCommandId,
+							AfterOperation = last.NextRequestParams.AfterOperation,
 							SchemaName = schemaName,
 							TableName = tableName,
 							PageSize = PageSize
