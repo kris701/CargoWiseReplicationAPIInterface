@@ -20,7 +20,21 @@ namespace CargoWiseReplicationAPIInterface.Tests.Services
 
 	//		// ASSERT
 	//		Assert.IsNotNull(result);
-	//		Assert.IsGreaterThan(result.Data.Items.Count, 0);
+	//		Assert.IsTrue(result.Data.Items.Count > 0);
+	//	}
+
+	//	[TestMethod]
+	//	public async Task Can_GetDetails()
+	//	{
+	//		// ARRANGE
+	//		var service = new ReplicationAPIHTTPService(_url, _username, _password);
+
+	//		// ACT
+	//		var result = await service.GetChanges("0x00000000000000000000", "0x0000DFAA000C3EAC0005", "dbo", "JobCharge");
+
+	//		// ASSERT
+	//		Assert.IsNotNull(result);
+	//		Assert.IsTrue(result.Items.Count > 0);
 	//	}
 	//}
 }

@@ -19,7 +19,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 			var repicationInterface = new ReplicationAPI(mockApi);
 			var changes = JsonSerializer.Deserialize<ChangesModel>(File.ReadAllText(inputFile));
 			Assert.IsNotNull(changes);
-			mockApi.ChangesToReturn = changes.Changes;
+			mockApi.ChangesToReturn = changes.Changes.Select(x => x.Data).ToList();
 
 			// ACT
 			var actual = await repicationInterface.GetDetails<GlbCompanyModel>("0x00000000000000000000", "0xFFFFFFFFFFFFFFFFFFFF", "dbo", "GlbCompany");
@@ -42,7 +42,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 			fileText = fileText.Replace("\u001e", "");
 			var changes = JsonSerializer.Deserialize<ChangesModel>(fileText);
 			Assert.IsNotNull(changes);
-			mockApi.ChangesToReturn = changes.Changes;
+			mockApi.ChangesToReturn = changes.Changes.Select(x => x.Data).ToList();
 
 			// ACT
 			var actual = await repicationInterface.GetDetails<GenCustomAddOnValue>("0x00000000000000000000", "0xFFFFFFFFFFFFFFFFFFFF", "dbo", "GenCustomAddOnValue");
@@ -65,7 +65,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 			fileText = fileText.Replace("\u001e", "");
 			var changes = JsonSerializer.Deserialize<ChangesModel>(fileText);
 			Assert.IsNotNull(changes);
-			mockApi.ChangesToReturn = changes.Changes;
+			mockApi.ChangesToReturn = changes.Changes.Select(x => x.Data).ToList();
 
 			// ACT
 			var actual = await repicationInterface.GetDetails<GlbGroup>("0x00000000000000000000", "0xFFFFFFFFFFFFFFFFFFFF", "dbo", "GlbGroup");
@@ -88,7 +88,7 @@ namespace CargoWiseReplicationAPIInterface.Tests
 			fileText = fileText.Replace("\u001e", "");
 			var changes = JsonSerializer.Deserialize<ChangesModel>(fileText);
 			Assert.IsNotNull(changes);
-			mockApi.ChangesToReturn = changes.Changes;
+			mockApi.ChangesToReturn = changes.Changes.Select(x => x.Data).ToList();
 
 			// ACT
 			var actual = await repicationInterface.GetDetails<StmNote>("0x00000000000000000000", "0xFFFFFFFFFFFFFFFFFFFF", "dbo", "GlbGroup");

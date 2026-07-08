@@ -7,14 +7,14 @@ namespace CargoWiseReplicationAPIInterface.Tests.Mocks
 	public class MockReplicationAPIService : IReplicationAPIService
 	{
 		public int ChangesIndex { get; set; } = 0;
-		public List<ChangesResponse> ChangesToReturn { get; set; } = new List<ChangesResponse>();
+		public List<ChangesData> ChangesToReturn { get; set; } = new List<ChangesData>();
 
-		public async Task<ChangesResponse> GetChanges(string afterLsn, string maxLsn, string schemaName, string tableName)
+		public async Task<ChangesData> GetChanges(string afterLsn, string maxLsn, string schemaName, string tableName)
 		{
 			return ChangesToReturn[ChangesIndex++];
 		}
 
-		public async Task<ChangesResponse?> GetChangesFromLast(ChangesResponse last, string maxLsn, string schemaName, string tableName)
+		public async Task<ChangesData?> GetChangesFromLast(ChangesData last, string maxLsn, string schemaName, string tableName)
 		{
 			if (ChangesIndex >= ChangesToReturn.Count)
 				return null;

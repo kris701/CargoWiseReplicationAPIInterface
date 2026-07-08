@@ -2,7 +2,6 @@
 using CargoWiseReplicationAPIInterface.Models.Summary;
 using SerializableHttps;
 using SerializableHttps.AuthenticationMethods;
-using SerializableHttps.Exceptions;
 using System.Diagnostics.CodeAnalysis;
 using System.Net.Http.Headers;
 using System.Text;
@@ -83,7 +82,7 @@ namespace CargoWiseReplicationAPIInterface.Services
 			}
 		}
 
-		public async Task<ChangesResponse> GetChanges(string afterLsn, string maxLsn, string schemaName, string tableName)
+		public async Task<ChangesData> GetChanges(string afterLsn, string maxLsn, string schemaName, string tableName)
 		{
 			try
 			{
@@ -102,7 +101,10 @@ namespace CargoWiseReplicationAPIInterface.Services
 				var response = JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
 				if (response == null)
 					throw new Exception("Invalid response!");
-				return response;
+				// Mitigation for older replication API version
+				if (response.Data.Data != null)
+					return response.Data.Data;
+				return response.Data;
 			}
 			catch (Exception ex)
 			{
@@ -111,7 +113,7 @@ namespace CargoWiseReplicationAPIInterface.Services
 			}
 		}
 
-		public async Task<ChangesResponse?> GetChangesFromLast(ChangesResponse last, string maxLsn, string schemaName, string tableName)
+		public async Task<ChangesData?> GetChangesFromLast(ChangesData last, string maxLsn, string schemaName, string tableName)
 		{
 			if (last.Data.CurrentItemCount == last.Data.ItemsPerPage)
 			{
@@ -132,7 +134,13 @@ namespace CargoWiseReplicationAPIInterface.Services
 						URL + "/change-detail"
 					);
 					detailsResponse = ReplaceInvalidCharacters(detailsResponse);
-					return JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
+					var response = JsonSerializer.Deserialize<ChangesResponse>(detailsResponse);
+					if (response == null)
+						throw new Exception("Invalid response!");
+					// Mitigation for older replication API version
+					if (response.Data.Data != null)
+						return response.Data.Data;
+					return response.Data;
 				}
 				catch (Exception ex)
 				{

@@ -7,7 +7,7 @@ namespace CargoWiseReplicationAPIInterface.Services
 	{
 		public Task<SummaryResponse> GetSummary(string afterLsn);
 
-		public Task<ChangesResponse> GetChanges(string afterLsn, string maxLsn, string schemaName, string tableName);
-		public Task<ChangesResponse?> GetChangesFromLast(ChangesResponse last, string maxLsn, string schemaName, string tableName);
+		public Task<ChangesData> GetChanges(string afterLsn, string maxLsn, string schemaName, string tableName);
+		public Task<ChangesData?> GetChangesFromLast(ChangesData last, string maxLsn, string schemaName, string tableName);
 	}
 }

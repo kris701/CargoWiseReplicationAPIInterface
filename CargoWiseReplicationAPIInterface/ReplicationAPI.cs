@@ -96,7 +96,7 @@ namespace CargoWiseReplicationAPIInterface
 			{
 				ExpandDictionary(typeDict, currentChanges, propSet);
 
-				ConvertAndInsertChanges(currentChanges.Data.Items, typeDict, asType, returnList, operationProp);
+				ConvertAndInsertChanges(currentChanges.Items, typeDict, asType, returnList, operationProp);
 
 				currentChanges = await _api.GetChangesFromLast(currentChanges, maxLsn, schemaName, tableName);
 			}
@@ -104,9 +104,9 @@ namespace CargoWiseReplicationAPIInterface
 			return returnList;
 		}
 
-		private void ExpandDictionary(Dictionary<string, string> dict, ChangesResponse response, HashSet<string> propSet)
+		private void ExpandDictionary(Dictionary<string, string> dict, ChangesData response, HashSet<string> propSet)
 		{
-			foreach (var item in response.Data.Items)
+			foreach (var item in response.Items)
 				foreach (var col in item.Columns)
 					if (propSet.Contains(col.Name) && !dict.ContainsKey(col.Name))
 						dict.Add(col.Name, col.Type.ToUpper());

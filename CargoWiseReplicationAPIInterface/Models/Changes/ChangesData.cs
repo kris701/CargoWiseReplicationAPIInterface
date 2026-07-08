@@ -12,5 +12,8 @@ namespace CargoWiseReplicationAPIInterface.Models.Changes
 		public ChangesDataNextRequestParams NextRequestParams { get; set; }
 		[JsonPropertyName("items")]
 		public List<ChangesDataItems> Items { get; set; }
+
+		[JsonPropertyName("data")]
+		public ChangesData? Data { get; set; }
 	}
 }
