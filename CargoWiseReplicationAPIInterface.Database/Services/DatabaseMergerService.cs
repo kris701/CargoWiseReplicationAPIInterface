@@ -25,6 +25,10 @@ namespace CargoWiseReplicationAPIInterface.Database.Services
 		/// If something fails, retry this many times before throwing
 		/// </summary>
 		public int RetryTimes { get; set; } = 5;
+		/// <summary>
+		/// Log the progress of batches
+		/// </summary>
+		public bool LogBatches { get; set; } = false;
 
 		private readonly IDBClient _dbClient;
 
@@ -87,14 +91,21 @@ namespace CargoWiseReplicationAPIInterface.Database.Services
 
 		private async Task MergeSet<T>(List<T> data, string stp, ILogger logger, string tableName, CancellationToken cancellationToken)
 		{
+			if (LogBatches)
+				logger.LogInformation($"Merge started, will take approximately {data.Count / BatchSize} batches.");
+
+			var batch = 0;
 			while (data.Count > 0 && !cancellationToken.IsCancellationRequested)
 			{
 				var retryCount = 0;
+				batch++;
 				while (retryCount < RetryTimes && !cancellationToken.IsCancellationRequested)
 				{
 					try
 					{
 						var inputList = data.Take(BatchSize).ToList();
+						if (LogBatches)
+							logger.LogInformation($"Starting batch {batch} with {inputList.Count} entries...");
 						await _dbClient.ExecuteAsync(stp, new DatabaseInputModel<T>(inputList));
 						if (data.Count <= BatchSize)
 							data.Clear();
