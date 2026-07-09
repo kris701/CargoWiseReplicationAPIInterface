@@ -92,7 +92,7 @@ namespace CargoWiseReplicationAPIInterface.Database.Services
 		private async Task MergeSet<T>(List<T> data, string stp, ILogger logger, string tableName, CancellationToken cancellationToken)
 		{
 			if (LogBatches)
-				logger.LogInformation($"Merge started, will take approximately {data.Count / BatchSize} batches.");
+				logger.LogInformation($"Merge started, will take approximately {(data.Count / BatchSize) + 1} batches.");
 
 			var batch = 0;
 			while (data.Count > 0 && !cancellationToken.IsCancellationRequested)
