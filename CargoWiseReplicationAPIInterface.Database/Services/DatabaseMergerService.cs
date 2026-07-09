@@ -87,10 +87,9 @@ namespace CargoWiseReplicationAPIInterface.Database.Services
 
 		private async Task MergeSet<T>(List<T> data, string stp, ILogger logger, string tableName, CancellationToken cancellationToken)
 		{
-			var retryCount = 0;
-
 			while (data.Count > 0 && !cancellationToken.IsCancellationRequested)
 			{
+				var retryCount = 0;
 				while (retryCount < RetryTimes && !cancellationToken.IsCancellationRequested)
 				{
 					try
