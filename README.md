@@ -2,7 +2,7 @@
     <img src="https://github.com/user-attachments/assets/7d62b044-b71d-4434-9721-3e5bd919301f" width="200" height="200" />
 </p>
 
-[![Build and Publish](https://github.com/kris701/CargoWiseReplicationAPIInterface/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/kris701/CargoWiseReplicationAPIInterface/actions/workflows/dotnet-desktop.yml)
+[![Build and Publish](https://github.com/kris701/CargoWiseReplicationAPIInterface/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kris701/CargoWiseReplicationAPIInterface/actions/workflows/dotnet-desktop.yml)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/kris701/CargoWiseReplicationAPIInterface/main)
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/kris701/CargoWiseReplicationAPIInterface)
 ![Static Badge](https://img.shields.io/badge/Platform-Windows-blue)
