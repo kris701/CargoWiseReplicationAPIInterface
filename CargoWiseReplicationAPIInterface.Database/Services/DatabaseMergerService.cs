@@ -11,7 +11,7 @@ namespace CargoWiseReplicationAPIInterface.Database.Services
 	/// <summary>
 	/// Service for merging data fetched from the replication API
 	/// </summary>
-	public class DatabaseMergerService
+	public class DatabaseMergerService : IDatabaseMergerService
 	{
 		/// <summary>
 		/// The schema to look for the STP in

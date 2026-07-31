@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CargoWiseReplicationAPIInterface.Database\CargoWiseReplicationAPIInterface.Database.csproj" />
+    <ProjectReference Include="..\CargoWiseReplicationAPIInterface.Serialization\CargoWiseReplicationAPIInterface.Serialization.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,13 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="TestFiles\expected3.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="TestFiles\expected2.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="TestFiles\expected1.sql">
+    <None Update="TestFiles\TestModelData.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

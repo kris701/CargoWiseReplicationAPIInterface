@@ -13,7 +13,7 @@ namespace CargoWiseReplicationAPIInterface.Serialization
 		/// <summary>
 		/// The merger service to use
 		/// </summary>
-		public DatabaseMergerService MergerService { get; set; }
+		public IDatabaseMergerService MergerService { get; set; }
 		/// <summary>
 		/// A logger to output progress
 		/// </summary>
@@ -29,11 +29,14 @@ namespace CargoWiseReplicationAPIInterface.Serialization
 		/// <param name="mergerService"></param>
 		/// <param name="logger"></param>
 		/// <param name="modelNamespace"></param>
-		public CWExcelImporter(DatabaseMergerService mergerService, ILogger logger, string modelNamespace)
+		public CWExcelImporter(IDatabaseMergerService mergerService, ILogger logger, string modelNamespace)
 		{
 			MergerService = mergerService;
 			Logger = logger;
 			ModelNamespace = modelNamespace;
+
+			if (!ModelNamespace.EndsWith('.'))
+				ModelNamespace += '.';
 		}
 
 		/// <summary>
@@ -90,7 +93,7 @@ namespace CargoWiseReplicationAPIInterface.Serialization
 			var columnInfoDict = columnInfo.ToDictionary(x => x.ColumnName!, x => x.Index);
 
 			var targetProps = targetType.GetProperties();
-			for (int row = 2; row < sheet.Dimension.Rows; row++)
+			for (int row = 2; row <= sheet.Dimension.Rows; row++)
 			{
 				var obj = Activator.CreateInstance(targetType);//generic object
 				foreach (var prop in targetProps)
