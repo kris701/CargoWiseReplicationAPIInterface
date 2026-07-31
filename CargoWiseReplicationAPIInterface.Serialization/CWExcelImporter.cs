@@ -95,12 +95,15 @@ namespace CargoWiseReplicationAPIInterface.Serialization
 			var targetProps = targetType.GetProperties();
 			for (int row = 2; row <= sheet.Dimension.Rows; row++)
 			{
+				var allNull = true;
 				var obj = Activator.CreateInstance(targetType);//generic object
 				foreach (var prop in targetProps)
 				{
 					if (!columnInfoDict.ContainsKey(prop.Name))
 						continue;
 					var val = sheet.Cells[row, columnInfoDict[prop.Name]].Value;
+					if (val != null)
+						allNull = false;
 					var propType = prop.PropertyType;
 					var underlying = Nullable.GetUnderlyingType(propType);
 					if (underlying == null)
@@ -108,7 +111,8 @@ namespace CargoWiseReplicationAPIInterface.Serialization
 					else
 						prop.SetValue(obj, ObjectToType(underlying, val));
 				}
-				list.Add(obj);
+				if (!allNull)
+					list.Add(obj);
 			}
 
 			return list;

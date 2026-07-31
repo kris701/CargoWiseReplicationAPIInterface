@@ -8,8 +8,8 @@ namespace CargoWiseReplicationAPIInterface.Serialization.Tests
 	public class CWExcelImporterTests
 	{
 		[TestMethod]
-		[DataRow("TestFiles/TestModelData.xlsx")]
-		public async Task Can_Import(string excelFile)
+		[DataRow("TestFiles/TestModelData.xlsx", 3)]
+		public async Task Can_Import(string excelFile, int expectedRows)
 		{
 			// ARRANGE
 			var merger = new MockDatabaseMergerService();
@@ -22,7 +22,7 @@ namespace CargoWiseReplicationAPIInterface.Serialization.Tests
 			}
 
 			// ASSERT
-			Assert.AreEqual(3, merger.Data.Count);
+			Assert.AreEqual(expectedRows, merger.Data.Count);
 		}
 	}
 }
