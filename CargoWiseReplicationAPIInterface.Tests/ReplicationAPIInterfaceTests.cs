@@ -101,6 +101,29 @@ namespace CargoWiseReplicationAPIInterface.Tests
 		}
 
 		[TestMethod]
+		[DataRow("TestFiles/Changes/input7.json", "TestFiles/Changes/expected7.json")]
+		public async Task Can_ConvertChanges_JobShipment(string inputFile, string expectedFile)
+		{
+			// ARRANGE
+			var mockApi = new MockReplicationAPIService();
+			var repicationInterface = new ReplicationAPI(mockApi);
+			var fileText = File.ReadAllText(inputFile);
+			fileText = fileText.Replace("\u001e", "");
+			var changes = JsonSerializer.Deserialize<ChangesModel>(fileText);
+			Assert.IsNotNull(changes);
+			mockApi.ChangesToReturn = changes.Changes.Select(x => x.Data).ToList();
+
+			// ACT
+			var actual = await repicationInterface.GetDetails<JobShipment>("0x00000000000000000000", "0xFFFFFFFFFFFFFFFFFFFF", "dbo", "JobShipment");
+
+			// ASSERT
+			var expectedObject = JsonSerializer.Deserialize<List<JobShipment>>(File.ReadAllText(expectedFile));
+			var expectedText = JsonSerializer.Serialize(expectedObject);
+			var actualText = JsonSerializer.Serialize(actual);
+			Assert.AreEqual(expectedText, actualText);
+		}
+
+		[TestMethod]
 		[DataRow("TestFiles/Summary/input1.json", "TestFiles/Summary/expected1.json")]
 		public void Can_ParseSummaryResponse(string inputFile, string expectedFile)
 		{
