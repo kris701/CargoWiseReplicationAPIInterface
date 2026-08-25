@@ -392,7 +392,7 @@
                   },
                   {
                     "columnName": "GC_SystemCreateTimeUtc",
-                    "value": "06/24/2022 11:03:00"
+                    "value": "06/24/2022 11:03:00 -04:00"
                   },
                   {
                     "columnName": "GC_SystemCreateUser",
@@ -400,7 +400,7 @@
                   },
                   {
                     "columnName": "GC_SystemLastEditTimeUtc",
-                    "value": "07/30/2024 11:06:00"
+                    "value": "07/30/2024 11:06:00 +04:00"
                   },
                   {
                     "columnName": "GC_SystemLastEditUser",
