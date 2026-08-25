@@ -186,8 +186,16 @@ namespace CargoWiseReplicationAPIInterface
 					var strValue2 = value.ToString();
 					if (strValue2 == null)
 						return "null";
-					var parsed = DateTime.ParseExact(strValue2, "MM/dd/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-					return $"\"{parsed.ToString("O")}\"";
+					if (strValue2.Contains('-') || strValue2.Contains('+'))
+					{
+						var withOffset = DateTime.ParseExact(strValue2, "MM/dd/yyyy HH:mm:ss zzz", CultureInfo.InvariantCulture);
+						return $"\"{withOffset.ToString("O")}\"";
+					}
+					else
+					{
+						var withoutOffset = DateTime.ParseExact(strValue2, "MM/dd/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+						return $"\"{withoutOffset.ToString("O")}\"";
+					}					
 				case "VARBINARY":
 					var bytes = Encoding.ASCII.GetBytes($"{value}");
 					return $"[{string.Join(',', bytes)}]";
