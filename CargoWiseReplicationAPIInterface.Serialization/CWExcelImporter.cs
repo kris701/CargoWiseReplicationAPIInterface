@@ -63,6 +63,8 @@ namespace CargoWiseReplicationAPIInterface.Serialization
 					Logger.LogInformation($"Parsing worksheet '{sheet.Name}'");
 					var targetTypeName = ModelNamespace + sheet.Name;
 					var targetType = ByName(targetTypeName);
+					if (targetType == null)
+						continue;
 
 					var data = GetList(targetType, sheet);
 
@@ -144,7 +146,7 @@ namespace CargoWiseReplicationAPIInterface.Serialization
 		}
 
 		// https://stackoverflow.com/a/20008954
-		private Type ByName(string name)
+		private Type? ByName(string name)
 		{
 			foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies().Reverse())
 			{
