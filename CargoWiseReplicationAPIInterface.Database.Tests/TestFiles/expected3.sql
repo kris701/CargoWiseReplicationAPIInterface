@@ -23,7 +23,7 @@ CREATE PROCEDURE [CWO].[SetLastLSN]
 @LastLSN NVARCHAR (MAX), @TableCode NVARCHAR (MAX), @UpdatedAt DATETIME
 AS
 BEGIN TRANSACTION
-	DELETE [CWR].[LastLSN] WHERE  TableCode = @TableCode;
-	INSERT  INTO [CWR].[LastLSN] VALUES (@LastLSN, @TableCode, @UpdatedAt);
+	DELETE [CWO].[LastLSN] WHERE  TableCode = @TableCode;
+	INSERT  INTO [CWO].[LastLSN] VALUES (@LastLSN, @TableCode, @UpdatedAt);
 COMMIT TRANSACTION;
 GO
