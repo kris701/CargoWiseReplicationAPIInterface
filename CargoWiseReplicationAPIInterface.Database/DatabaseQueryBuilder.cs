@@ -93,8 +93,8 @@ namespace CargoWiseReplicationAPIInterface.Database
 			sb.AppendLine($"@LastLSN NVARCHAR (MAX), @TableCode NVARCHAR (MAX), @UpdatedAt DATETIME");
 			sb.AppendLine($"AS");
 			sb.AppendLine($"BEGIN TRANSACTION");
-			sb.AppendLine($"\tDELETE [CWR].[LastLSN] WHERE  TableCode = @TableCode;");
-			sb.AppendLine($"\tINSERT  INTO [CWR].[LastLSN] VALUES (@LastLSN, @TableCode, @UpdatedAt);");
+			sb.AppendLine($"\tDELETE [{Schema}].[LastLSN] WHERE  TableCode = @TableCode;");
+			sb.AppendLine($"\tINSERT  INTO [{Schema}].[LastLSN] VALUES (@LastLSN, @TableCode, @UpdatedAt);");
 			sb.AppendLine("COMMIT TRANSACTION;");
 			sb.AppendLine("GO");
 
