@@ -34,7 +34,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="DatabaseSharp" Version="1.7.3" />
-	  <PackageReference Include="ToolsSharp" Version="1.2.14" />
+	  <PackageReference Include="ToolsSharp" Version="1.2.16" />
 	</ItemGroup>
 
 	<ItemGroup>
